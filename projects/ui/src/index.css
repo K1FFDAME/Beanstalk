@@ -14,14 +14,13 @@
   font-weight: 600;
 }
 
-
 /** ------------------------- **/
 /** Globals                   **/
 /** ------------------------- **/
 
-html, body {
+html,
+body {
   height: 100%;
-  background-color: #daf2ff;
 }
 
 body {
@@ -34,14 +33,17 @@ body {
   overscroll-behavior: none;
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
+}
+
+body {
+  background: transparent !important;
 }
 
 /* .alm {

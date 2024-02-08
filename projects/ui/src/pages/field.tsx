@@ -19,6 +19,7 @@ import {
 import { FC } from '~/types';
 import { XXLWidth } from '~/components/App/muiTheme';
 import { useAppSelector } from '~/state';
+import { getRouteByPath } from '~/components/Nav/routes';
 
 export const podlineColumns: DataGridProps['columns'] = [
   {
@@ -86,7 +87,7 @@ const FieldPage: FC<{}> = () => {
     <Container sx={{ maxWidth: `${XXLWidth}px !important`, width: '100%' }}>
       <Stack spacing={2} width="100%">
         <PageHeader
-          title="The Field"
+          title={getRouteByPath('/field')!.title}
           description="Earn yield by lending Beans to Beanstalk"
           href="https://docs.bean.money/almanac/farm/field"
           OuterStackProps={{ direction: 'row' }}

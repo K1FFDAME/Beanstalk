@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react';
 import strip from '@rollup/plugin-strip';
 import analyze from 'rollup-plugin-analyzer';
 import removeHTMLAttributes from 'vite-plugin-react-remove-attributes';
+import vitePluginSvgr from 'vite-plugin-svgr';
 
 type CSPData = {
   'default-src': string[];
@@ -105,6 +106,7 @@ export default defineConfig(
             attributes: ['data-cy'],
             exclude: 'node_modules',
           }),
+        vitePluginSvgr({}),
       ],
       resolve: {
         alias: [

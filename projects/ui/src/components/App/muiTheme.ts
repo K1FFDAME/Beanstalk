@@ -206,7 +206,7 @@ export const BeanstalkPalette = {
   },
 };
 
-export const PAGE_BORDER_COLOR = BeanstalkPalette.blue;
+export const PAGE_BORDER_COLOR = 'rgba(18, 18, 18, 0.1)';
 
 export const IconSize = {
   xs: 14,
@@ -304,8 +304,8 @@ const muiThemeBase: ThemeOptions = {
       light: BeanstalkPalette.lightestGrey,
     },
     background: {
-      default: BeanstalkPalette.theme.winter.iceBlue,
-      paper: BeanstalkPalette.offWhite,
+      default: '#EDEFF4',
+      paper: '#F4F4F6',
     },
     error: {
       main: BeanstalkPalette.theme.winter.red,
@@ -412,7 +412,7 @@ const muiThemeBase: ThemeOptions = {
       styleOverrides: {
         root: (t) =>
           t.theme.unstable_sx({
-            border: 'none'
+            border: 'none',
           }),
       },
     },
@@ -703,7 +703,7 @@ const muiThemeBase: ThemeOptions = {
         scrollButtons: {
           '&.Mui-disabled': {
             opacity: 0.3,
-          }
+          },
         },
       },
     },
@@ -821,7 +821,10 @@ const muiThemeBase: ThemeOptions = {
           style: (t) =>
             t.theme.unstable_sx({
               color: BeanstalkPalette.theme.winter.primary,
-              backgroundColor: hexToRgba(BeanstalkPalette.theme.winter.primary, 0.1),
+              backgroundColor: hexToRgba(
+                BeanstalkPalette.theme.winter.primary,
+                0.1
+              ),
             }),
         },
         {

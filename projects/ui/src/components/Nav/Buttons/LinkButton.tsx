@@ -30,9 +30,10 @@ const LinkButton: FC<{ to: string; title: string; tag?: string }> = ({
       sx={{
         // Set a default transparent bottom border.
         // Switch to green when selected.
-        borderBottom: 3,
+        borderBottom: 1.5,
         borderColor: 'transparent',
-        borderBottomColor: match ? 'primary.main' : 'transparent',
+        borderBottomColor: match ? 'black' : 'transparent',
+        padding: '12px 0',
         // Pull the button down slightly so that it overlaps the Nav's
         // bottom blue border.
         mb: '-1.5px',
@@ -47,7 +48,9 @@ const LinkButton: FC<{ to: string; title: string; tag?: string }> = ({
         size="small"
         variant="text"
         sx={{
-          color: match ? 'primary.main' : 'text.primary',
+          fontSize: '14px',
+          // color: match ? 'primary.main' : 'text.primary',
+          color: 'text.primary',
           '&:hover > h6': {
             textDecorationThickness: '2px',
           },

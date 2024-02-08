@@ -9,11 +9,15 @@ import LiquidityByState from '~/components/Forecast/LiquidityByState';
 import MarketCap from '~/components/Analytics/Bean/MarketCap';
 
 import { FC } from '~/types';
+import { getRouteByPath } from '~/components/Nav/routes';
 
 const ForecastPage: FC<{}> = () => (
   <Container maxWidth="lg">
     <Stack gap={2}>
-      <PageHeader title="Forecast" description="View conditions on the Farm" />
+      <PageHeader
+        title={getRouteByPath('/')!.title}
+        description="View conditions on the Farm"
+      />
       <Stack direction={{ md: 'row', xs: 'column' }} gap={2}>
         <Card sx={{ flex: 1, pt: 2 }}>
           <Price />

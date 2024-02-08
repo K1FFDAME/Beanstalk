@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "baseUrl": "./",
     "target": "ESNext",
     "jsxImportSource": "@emotion/react",
@@ -28,7 +29,9 @@
     "downlevelIteration": true,
     "incremental": true,
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": [
+        "./src/*"
+      ]
     }
   },
   "include": [

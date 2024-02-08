@@ -85,9 +85,7 @@ const AboutButton: FC<ButtonProps> = ({ sx }) => {
         >
           <Row spacing={1}>
             <ListItemText>
-              <Typography variant="h4">
-                Contracts
-              </Typography>
+              <Typography variant="h4">Contracts</Typography>
             </ListItemText>
             <Typography variant="body2" color="white">
               <ArrowForwardIcon
@@ -120,6 +118,7 @@ const AboutButton: FC<ButtonProps> = ({ sx }) => {
           </Typography>
         }
         popoverContent={menuContent}
+        sx={sx}
         navDrawer
         noEndIcon
         onOpen={show}

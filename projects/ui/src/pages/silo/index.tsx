@@ -60,6 +60,7 @@ import TransactionToast from '~/components/Common/TxnToast';
 import { useFetchFarmerSilo } from '~/state/farmer/silo/updater';
 import useFarmerSilo from '~/hooks/farmer/useFarmerSilo';
 import useSilo from '~/hooks/beanstalk/useSilo';
+import { getRouteByPath } from '~/components/Nav/routes';
 
 const FormControlLabelStat: FC<
   Partial<FormControlLabelProps> & {
@@ -671,7 +672,7 @@ const SiloPage: FC<{}> = () => {
     <Container maxWidth="lg">
       <Stack gap={2}>
         <PageHeader
-          title="The Silo"
+          title={getRouteByPath('/silo')!.title}
           description="Earn yield and participate in Beanstalk governance by depositing whitelisted assets"
           href="https://docs.bean.money/almanac/farm/silo"
           // makes guide display to the right of the title on mobile

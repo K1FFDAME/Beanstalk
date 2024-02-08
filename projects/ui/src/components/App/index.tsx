@@ -1,3 +1,4 @@
+/// <reference types="vite-plugin-svgr/client" />
 import React from 'react';
 
 import { Box } from '@mui/material';
@@ -41,8 +42,6 @@ import GovernanceUpdater from '~/state/beanstalk/governance/updater';
 import useBanner from '~/hooks/app/useBanner';
 import useNavHeight from '~/hooks/app/usePageDimensions';
 
-import pageBackground from '~/img/beanstalk/interface/bg/winter.png';
-
 import EnforceNetwork from '~/components/App/EnforceNetwork';
 import useAccount from '~/hooks/ledger/useAccount';
 import './App.css';
@@ -60,7 +59,8 @@ import FarmerDelegationsUpdater from '~/state/farmer/delegations/updater';
 import VotingPowerPage from '~/pages/governance/votingPower';
 import MorningUpdater from '~/state/beanstalk/sun/morning';
 import MorningFieldUpdater from '~/state/beanstalk/field/morning';
-import Snowflakes from './theme/winter/Snowflakes';
+import Bg1 from './Bg1.svg?react';
+import Bg2 from './Bg2.svg?react';
 
 BigNumber.set({ EXPONENTIAL_AT: [-12, 20] });
 
@@ -137,12 +137,10 @@ export default function App() {
       <CustomToaster navHeight={navHeight} />
       {account && <NewProposalsDialog />}
       {/* <Leaves /> */}
-      <Snowflakes />
+      <Background />
       <Box
         sx={{
-          bgcolor: 'background.default',
-          backgroundImage: `url(${pageBackground})`,
-          backgroundAttachment: 'fixed',
+          // bgcolor: 'background.default',
           backgroundPosition: 'bottom center',
           backgroundSize: '100%',
           backgroundRepeat: 'no-repeat',
@@ -227,3 +225,16 @@ export default function App() {
     </>
   );
 }
+
+const Background = () => (
+  <Box
+    sx={{
+      zIndex: -1,
+      position: 'fixed',
+      inset: 0,
+    }}
+  >
+    <Bg2 />
+    <Bg1 />
+  </Box>
+);

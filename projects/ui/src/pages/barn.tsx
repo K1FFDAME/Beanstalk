@@ -10,16 +10,17 @@ import {
   HOW_TO_RINSE_SPROUTS,
   HOW_TO_TRANSFER_FERTILIZER,
   HOW_TO_TRADE_FERTILIZER,
-  UNDERSTAND_FERT_VAPY
+  UNDERSTAND_FERT_VAPY,
 } from '~/util/Guides';
 
 import { FC } from '~/types';
+import { getRouteByPath } from '~/components/Nav/routes';
 
 const Barn: FC<{}> = () => (
   <Container maxWidth="sm">
     <Stack gap={2}>
       <PageHeader
-        title="The Barn"
+        title={getRouteByPath('/barn')!.title}
         description="Earn yield and recapitalize Beanstalk with Fertilizer"
         href="https://docs.bean.money/almanac/farm/barn"
         OuterStackProps={{ direction: 'row' }}

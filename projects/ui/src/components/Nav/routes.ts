@@ -34,19 +34,19 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
   top: [
     {
       path: '/',
-      title: 'Forecast',
+      title: 'Prognosis',
     },
     {
       path: '/silo',
-      title: 'Silo',
+      title: 'Medicine Cabinet',
     },
     {
       path: '/field',
-      title: 'Field',
+      title: 'Manufacturing Floor',
     },
     {
       path: '/barn',
-      title: 'Barn',
+      title: 'Stockpile',
     },
     {
       path: '/balances',
@@ -177,5 +177,8 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
   //   }
   // ],
 };
+
+export const getRouteByPath = (path: string) =>
+  ROUTES.top.find((r) => r.path === path);
 
 export default ROUTES;
