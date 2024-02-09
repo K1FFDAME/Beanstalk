@@ -95,6 +95,8 @@ const remBase = (n: number) => `${(n / BASE_FONT_SIZE).toFixed(4)}rem`;
  * See `constants/colors.ts`.
  */
 export const BeanstalkPalette = {
+  chartStroke: 'rgb(255, 0, 154)',
+
   // Greens
   logoGreen: '#46B955',
   mediumGreen: lighten('#46B955', 0.7),
@@ -785,6 +787,10 @@ const muiThemeBase: ThemeOptions = {
     MuiPaper: {
       styleOverrides: {
         rounded: { borderRadius: borderRadius * 1 },
+        root: {
+          boxShadow:
+            '0px 0px 0px 1px rgba(18, 18, 18, 0.1),0px 1px 1px 0px rgba(18, 18, 18, 0.2),0px 4px 12px -4px rgba(0, 0, 0, 0.24)',
+        },
       },
     },
     MuiDialogContent: {

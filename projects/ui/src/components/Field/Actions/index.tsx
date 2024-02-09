@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Card, Stack, Tab, Tabs } from '@mui/material';
 import useTabs from '~/hooks/display/useTabs';
-import BadgeTab from '~/components/Common/BadgeTab';
 import useFarmerField from '~/hooks/farmer/useFarmerField';
 import Sow from './Sow';
 import Transfer from './Transfer';
@@ -32,12 +31,14 @@ const FieldActions: FC<{}> = () => {
             }}
             variant="scrollable"
           >
-            <Tab label="Sow" />
+            <Tab label="Deposit" />
+            <Tab label="Convert" />
             <Tab label="Transfer" />
-            <BadgeTab
+            <Tab label="Withdraw" />
+            {/* <BadgeTab
               label="Harvest"
               showBadge={farmerField.harvestablePods.gt(0)}
-            />
+            /> */}
           </Tabs>
         </Row>
         <Box sx={{ px: 1, pb: 1 }}>

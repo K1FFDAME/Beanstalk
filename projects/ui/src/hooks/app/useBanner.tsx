@@ -9,6 +9,8 @@ import snapshotLogo from '~/img/ecosystem/snapshot-logo.svg';
 import useMigrationNeeded from '~/hooks/farmer/useMigrationNeeded';
 
 const useBanner = () => {
+  return null;
+  // eslint-disable-next-line no-unreachable
   const migrationNeeded = useMigrationNeeded();
   const activeProposals = useSelector<AppState, ActiveProposal[]>(
     (state) => state._beanstalk.governance.activeProposals

@@ -291,7 +291,7 @@ const MultiLineChart: React.FC<BaseChartProps> = (props) => (
                         props.horizontalLineNumber
                       ) as number,
                     }}
-                    stroke={BeanstalkPalette.logoGreen}
+                    stroke={BeanstalkPalette.chartStroke}
                     strokeDasharray={4}
                     strokeDashoffset={2}
                     strokeWidth={1}

@@ -16,7 +16,7 @@ const ForecastPage: FC<{}> = () => (
     <Stack gap={2}>
       <PageHeader
         title={getRouteByPath('/')!.title}
-        description="View conditions on the Farm"
+        description="Read and write directly to databases and stores from your projects."
       />
       <Stack direction={{ md: 'row', xs: 'column' }} gap={2}>
         <Card sx={{ flex: 1, pt: 2 }}>

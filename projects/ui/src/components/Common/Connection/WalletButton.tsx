@@ -42,6 +42,20 @@ import { BeanstalkPalette } from '~/components/App/muiTheme';
 const WalletButton: FC<{ showFullText?: boolean } & ButtonProps> = ({
   ...props
 }) => {
+  const bgWallet =
+    'radial-gradient(100.00% 100.00% at 50% 0%,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0) 100%),rgb(9, 9, 11)';
+
+  props.sx = {
+    borderRadius: '8px',
+    boxShadow: '0px 0px 0px 1px rgb(18, 18, 18)',
+    background: bgWallet,
+    padding: '6px 12px 6px 12px',
+    color: 'white',
+    ':hover': {
+      background: bgWallet,
+    },
+    ...props.sx,
+  };
   const account = useAccount();
   const { address } = useWagmiAccount();
   const { chain: _chain } = useNetwork();

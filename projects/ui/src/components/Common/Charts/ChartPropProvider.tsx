@@ -141,7 +141,7 @@ export type BaseChartProps = {
   pegLine?: boolean;
   isTWAP?: boolean;
   useCustomTokenList?: ERC20Token[];
-  tokenPerSeasonFilter?: { [key: string]: { from: number, to: number } };
+  tokenPerSeasonFilter?: { [key: string]: { from: number; to: number } };
   horizontalLineNumber?: number;
   stylesConfig?: ChartMultiStyles;
   stackedArea?: boolean;
@@ -184,7 +184,7 @@ const chartPadding = {
 const chartColors = BeanstalkPalette.theme.winter.chart;
 const defaultChartStyles: ChartMultiStyles = {
   0: {
-    stroke: BeanstalkPalette.theme.winter.primary,
+    stroke: BeanstalkPalette.chartStroke,
     fillPrimary: chartColors.primaryLight,
     strokeWidth: 2,
   },

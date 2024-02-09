@@ -88,7 +88,7 @@ const FieldPage: FC<{}> = () => {
       <Stack spacing={2} width="100%">
         <PageHeader
           title={getRouteByPath('/field')!.title}
-          description="Earn yield by lending Beans to Beanstalk"
+          description="Read and write directly to databases and stores from your projects"
           href="https://docs.bean.money/almanac/farm/field"
           OuterStackProps={{ direction: 'row' }}
           control={

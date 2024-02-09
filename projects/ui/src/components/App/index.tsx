@@ -95,6 +95,19 @@ const CustomToaster: FC<{ navHeight: number }> = ({ navHeight }) => (
   </Toaster>
 );
 
+const Background = () => (
+  <Box
+    sx={{
+      zIndex: -1,
+      position: 'fixed',
+      inset: 0,
+    }}
+  >
+    <Bg2 />
+    <Bg1 />
+  </Box>
+);
+
 export default function App() {
   const banner = useBanner();
   const navHeight = useNavHeight(!!banner);
@@ -225,16 +238,3 @@ export default function App() {
     </>
   );
 }
-
-const Background = () => (
-  <Box
-    sx={{
-      zIndex: -1,
-      position: 'fixed',
-      inset: 0,
-    }}
-  >
-    <Bg2 />
-    <Bg1 />
-  </Box>
-);

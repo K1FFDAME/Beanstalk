@@ -673,7 +673,7 @@ const SiloPage: FC<{}> = () => {
       <Stack gap={2}>
         <PageHeader
           title={getRouteByPath('/silo')!.title}
-          description="Earn yield and participate in Beanstalk governance by depositing whitelisted assets"
+          description="Read and write directly to databases and stores from your projects."
           href="https://docs.bean.money/almanac/farm/silo"
           // makes guide display to the right of the title on mobile
           OuterStackProps={{ direction: 'row' }}
