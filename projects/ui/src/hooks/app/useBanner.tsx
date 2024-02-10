@@ -21,7 +21,7 @@ const useBanner = () => {
     if (migrationNeeded === true) {
       return (
         <Banner height={BANNER_HEIGHT} to="/silo?view=migrate">
-          Silo V3 is here.&nbsp;&nbsp;
+          Beaker V3 is here.&nbsp;&nbsp;
           <strong>Migrate now &rarr;</strong>
         </Banner>
       );

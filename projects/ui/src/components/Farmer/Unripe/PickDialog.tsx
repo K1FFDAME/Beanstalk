@@ -304,7 +304,7 @@ const PickBeansDialog: FC<
         <Typography sx={{ fontSize: '15px' }} color="text.secondary">
           To claim non-Deposited Unripe ETHrxs and Unripe BEAN:ETH LP, they must
           be Picked. You can Pick assets to your wallet, or Pick and Deposit
-          them directly in the Silo.
+          them directly in the Beaker.
           <br />
           <br />
           Unripe Deposited assets <b>do not need to be Picked</b> and were be

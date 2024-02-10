@@ -71,7 +71,7 @@ export const useFetchFarmerSilo = () => {
   const fetch = useCallback(async () => {
     if (initialized) {
       dispatch(updateFarmerSiloLoading(true));
-      console.debug('[farmer/silo/useFarmerSilo] FETCH');
+      console.debug('[farmer/silo/useFarmerBeaker] FETCH');
 
       // FIXME: multicall this section
       // FIXME: translate?
@@ -344,11 +344,11 @@ const FarmerSiloUpdater = () => {
           if ((err as Error).message.includes('limit the query')) {
             dispatch(
               updateFarmerSiloError(
-                'Error while loading Silo data. RPC query limit exceeded.'
+                'Error while loading Beaker data. RPC query limit exceeded.'
               )
             );
             console.log(
-              'Failed to fetch Silo events: RPC query limit exceeded'
+              'Failed to fetch Beaker events: RPC query limit exceeded'
             );
           } else {
             dispatch(

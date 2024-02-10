@@ -5605,7 +5605,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct SiloExit.AccountSeasonOfPlenty",
+        "internalType": "struct BeakerExit.AccountSeasonOfPlenty",
         "name": "sop",
         "type": "tuple"
       }
@@ -6189,7 +6189,7 @@
             "type": "bytes1"
           }
         ],
-        "internalType": "struct Storage.SiloSettings",
+        "internalType": "struct Storage.BeakerSettings",
         "name": "",
         "type": "tuple"
       }
@@ -6501,7 +6501,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "toSilo",
+        "name": "toBeaker",
         "type": "uint256"
       },
       {

@@ -35,7 +35,7 @@ export const CHAIN_INFO: ChainInfoMap = {
   [SupportedChainId.TESTNET]: {
     networkType: NetworkType.L1,
     explorer: 'https://etherscan.io',
-    label: 'Silo V3 Test (Tenderly)',
+    label: 'Beaker V3 Test (Tenderly)',
     logoUrl: ethereumLogoUrl,
     nativeCurrency: { name: 'Tenderly Ether', symbol: 'tETH', decimals: 18 },
   },

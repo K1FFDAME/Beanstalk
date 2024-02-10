@@ -114,7 +114,7 @@ const Whitelist: FC<{
                 title={
                   <>
                     The amount of Stalk and Seeds earned for each 1 ETHrx
-                    Denominated Value (BDV) Deposited in the Silo.
+                    Denominated Value (BDV) Deposited in the Beaker.
                   </>
                 }
               >
@@ -126,7 +126,7 @@ const Whitelist: FC<{
                   <>
                     <strong>vAPY</strong> (Variable APY) uses historical data
                     about ETHrxs earned by Stalkholders to estimate future
-                    returns for Depositing assets in the Silo.&nbsp;
+                    returns for Depositing assets in the Beaker.&nbsp;
                     <Link
                       underline="hover"
                       href="https://docs.bean.money/almanac/guides/silo/understand-silo-vapy"
@@ -190,7 +190,7 @@ const Whitelist: FC<{
             </Row>
           </Grid>
           <Grid item md={1.5} xs={0} display={{ xs: 'none', md: 'block' }}>
-            <Tooltip title="Total Value Deposited in the Silo.">
+            <Tooltip title="Total Value Deposited in the Beaker.">
               <Typography color="text.secondary">TVD</Typography>
             </Tooltip>
           </Grid>
@@ -209,7 +209,7 @@ const Whitelist: FC<{
             <Tooltip
               title={
                 <>
-                  The value of your Silo deposits for each whitelisted token,
+                  The value of your Beaker deposits for each whitelisted token,
                   denominated in {denomination === 'bdv' ? 'ETHrxs' : 'USD'}.
                   <br />
                   <Typography
@@ -382,7 +382,7 @@ const Whitelist: FC<{
                                   subtitle={
                                     <>
                                       The percentage of all {token.symbol} that
-                                      is currently Deposited in the Silo.
+                                      is currently Deposited in the Beaker.
                                     </>
                                   }
                                 />
@@ -438,7 +438,7 @@ const Whitelist: FC<{
                                 subtitle={
                                   <>
                                     The total number of {token.symbol} Deposited
-                                    in the Silo.
+                                    in the Beaker.
                                   </>
                                 }
                               />
@@ -677,7 +677,7 @@ const Whitelist: FC<{
                                         <>
                                           The number of {token.symbol}
                                           <br />
-                                          you have Deposited in the Silo.
+                                          you have Deposited in the Beaker.
                                         </>
                                       }
                                     />

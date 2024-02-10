@@ -77,7 +77,7 @@ export const MigrateTab: FC<{}> = () => {
             {step === 1 && (
               <Stack spacing={2} maxWidth={550}>
                 <Typography variant="h1" textAlign="center">
-                  Migrate to Silo V3
+                  Migrate to Beaker V3
                 </Typography>
                 <Row spacing={1}>
                   {[
@@ -102,10 +102,10 @@ export const MigrateTab: FC<{}> = () => {
             {step === 2 && (
               <Stack textAlign="center" spacing={2} maxWidth={400}>
                 <Typography variant="h1">
-                  To use the Silo, you need to Migrate.
+                  To use the Beaker, you need to Migrate.
                 </Typography>
                 <Typography variant="body1">
-                  Migrating allows you to use the latest Silo features.
+                  Migrating allows you to use the latest Beaker features.
                   You&apos;ll need to pay a one-time transaction fee to perform
                   the migration.
                 </Typography>

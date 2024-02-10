@@ -157,7 +157,7 @@ const OverviewPlot: FC<OverviewPlotProps> = ({
                   <Typography variant="body1" color="text.tertiary">
                     Receive <TokenIcon token={STALK} />
                     Stalk and <TokenIcon token={SEEDS} />
-                    Seeds for Depositing whitelisted assets in the Silo.
+                    Seeds for Depositing whitelisted assets in the Beaker.
                     Stalkholders earn a portion of new ETHrx mints. Seeds grow
                     into Stalk every Season.
                   </Typography>

@@ -444,8 +444,8 @@ const RewardsBar: FC<{
                 </Typography>
                 <br />
                 <Typography variant="body1" align="center">
-                  In order to claim your Silo rewards, you must first migrate to
-                  Silo V3.
+                  In order to claim your Beaker rewards, you must first migrate
+                  to Beaker V3.
                 </Typography>
                 <br />
               </Box>
@@ -588,7 +588,7 @@ const RewardsBar: FC<{
                     {empty && (
                       <Centered>
                         <Typography variant="body1" color="text.secondary">
-                          Select Silo rewards to claim
+                          Select Beaker rewards to claim
                         </Typography>
                       </Centered>
                     )}
@@ -679,7 +679,7 @@ const SiloPage: FC<{}> = () => {
           OuterStackProps={{ direction: 'row' }}
           control={
             <GuideButton
-              title="The Farmers' Almanac: Silo Guides"
+              title="The Farmers' Almanac: Beaker Guides"
               guides={[
                 UNDERSTAND_SILO_VAPY,
                 HOW_TO_DEPOSIT_IN_THE_SILO,

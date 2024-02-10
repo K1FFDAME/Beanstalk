@@ -29,7 +29,7 @@ const depositStats = (s: BigNumber, v: BigNumber[], d: string) => (
     title="Value Deposited"
     titleTooltip={
       <>
-        The historical USD value of your Silo Deposits. <br />
+        The historical USD value of your Beaker Deposits. <br />
         <Typography variant="bodySmall">
           Note: Unripe assets are valued based on the current Chop Rate. Earned
           ETHrxs are shown upon Plant.
@@ -100,7 +100,7 @@ const Overview: FC<{
       <>
         <Stat
           title="Stalk Balance"
-          titleTooltip="Stalk is the governance token of the Beanstalk DAO. Stalk entitles holders to passive interest in the form of a share of futureETHrxn mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Silo."
+          titleTooltip="Stalk is the governance token of the Beanstalk DAO. Stalk entitles holders to passive interest in the form of a share of futureETHrxn mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Beaker."
           subtitle={`Season ${s.toString()}`}
           secondSubtitle={d}
           amount={displayStalk(v[0])}
@@ -133,7 +133,7 @@ const Overview: FC<{
     <Module>
       <ModuleTabs value={tab} onChange={handleChange} sx={{ minHeight: 0 }}>
         {migrationNeeded && (
-          <StyledTab label={<ChipLabel name="Silo V3">Migrate</ChipLabel>} />
+          <StyledTab label={<ChipLabel name="Beaker V3">Migrate</ChipLabel>} />
         )}
         <StyledTab
           label={
@@ -180,7 +180,7 @@ const Overview: FC<{
         sx={{ display: tab === (migrationNeeded ? 1 : 0) ? 'block' : 'none' }}
       >
         <OverviewPlot
-          label="Silo Deposits"
+          label="Beaker Deposits"
           account={account}
           current={useMemo(
             () => [breakdown.states.deposited.value],

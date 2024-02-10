@@ -80,7 +80,7 @@ const TransactionHistoryPage: FC<{}> = () => {
       <Module>
         <ModuleTabs value={tab} onChange={handleSetTab}>
           <Tab label="All" />
-          <Tab label="Silo" />
+          <Tab label="Beaker" />
           <Tab label="Lab" />
         </ModuleTabs>
         <Divider />

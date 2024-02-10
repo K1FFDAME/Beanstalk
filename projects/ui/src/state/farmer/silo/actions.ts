@@ -18,12 +18,12 @@ export const updateLegacyFarmerSiloRewards =
 
 export const updateLegacyFarmerSiloBalances =
   createAction<UpdateFarmerSiloBalancesPayload>(
-    'farmer/silo/updateFarmerSiloBalances'
+    'farmer/silo/updateFarmerBeakerBalances'
   );
 
 export const updateFarmerSiloBalanceSdk = createAction<
   Map<Token, TokenSiloBalance>
->('farmer/silo/updateFarmerSiloBalancesSdk');
+>('farmer/silo/updateFarmerBeakerBalancesSdk');
 
 export const updateFarmerSiloLoading = createAction<boolean>(
   'farmer/silo/loading'

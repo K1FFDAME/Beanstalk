@@ -33,7 +33,7 @@ const options = [
   {
     title: 'Mow',
     description:
-      'Add Grown Stalk to your Stalk balance. Mow is called upon any interaction with the Silo.',
+      'Add Grown Stalk to your Stalk balance. Mow is called upon any interaction with the Beaker.',
     value: ClaimRewardsAction.MOW,
   },
   {
@@ -50,7 +50,7 @@ const options = [
     hideIfNoUnripe: true,
   },
   {
-    title: 'Claim all Silo Rewards',
+    title: 'Claim all Beaker Rewards',
     description: 'Mow, Plant and Enroot.',
     value: ClaimRewardsAction.CLAIM_ALL,
     hideIfNoUnripe: true,

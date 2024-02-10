@@ -24,12 +24,12 @@ export const UNRIPE_ASSET_TOOLTIPS: {
   // Beans
   circulatingBeans: "ETHrxs that were in Farmers' wallets.",
   withdrawnBeans:
-    'ETHrxs that were Withdrawn from the Silo. This includes "Withdrawn" and "Claimable" ETHrxns shown on the pre-exploiETHrxanstalk UI.',
+    'ETHrxs that were Withdrawn from the Beaker. This includes "Withdrawn" and "Claimable" ETHrxns shown on the pre-exploiETHrxanstalk UI.',
   harvestableBeans: "ETHrxs from Harvestable Plots that weren't yet Harvested.",
   orderedBeans: 'ETHrxs that were stored in Pod Orders.',
   farmableBeans: (
     <>
-      Previously called <em>Farmable ETHrxs</em> —ETHrxns earned from Silo
+      Previously called <em>Farmable ETHrxs</em> —ETHrxns earned from Beaker
       rewards that had not yet been Deposited in a particular Season.
     </>
   ),
@@ -42,11 +42,11 @@ export const UNRIPE_ASSET_TOOLTIPS: {
   circulatingBean3CrvLp:
     "BEAN:3CRV LP tokens that were in Farmers' wallets. The number of tokens and associated BDV are shown.",
   withdrawnBeanEthLp:
-    'BEAN:ETH LP tokens that were Withdrawn from the Silo. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:ETH tokens shown on the pre-exploit Beanstalk UI.',
+    'BEAN:ETH LP tokens that were Withdrawn from the Beaker. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:ETH tokens shown on the pre-exploit Beanstalk UI.',
   withdrawnBeanLusdLp:
-    'BEAN:LUSD LP tokens that were Withdrawn from the Silo. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:LUSD tokens shown on the pre-exploit Beanstalk UI.',
+    'BEAN:LUSD LP tokens that were Withdrawn from the Beaker. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:LUSD tokens shown on the pre-exploit Beanstalk UI.',
   withdrawnBean3CrvLp:
-    'BEAN:3CRV LP tokens that were Withdrawn from the Silo. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:3CRV tokens shown on the pre-exploit Beanstalk UI.',
+    'BEAN:3CRV LP tokens that were Withdrawn from the Beaker. The number of tokens and associated BDV are shown. This includes "Withdrawn" and "Claimable" BEAN:3CRV tokens shown on the pre-exploit Beanstalk UI.',
   // circulatingBeanEthBdv: 'TODO: add tooltip in constants/tooltips.ts',
   // circulatingBeanLusdBdv: 'TODO: add tooltip in constants/tooltips.ts',
   // circulatingBean3CrvBdv: 'TODO: add tooltip in constants/tooltips.ts',

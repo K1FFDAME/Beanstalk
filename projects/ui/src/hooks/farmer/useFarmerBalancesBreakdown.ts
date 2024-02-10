@@ -15,12 +15,12 @@ export const STATE_CONFIG = {
   deposited: [
     'Deposited',
     BeanstalkPalette.logoGreen,
-    'Assets that are Deposited in the Silo.',
+    'Assets that are Deposited in the Beaker.',
   ],
   withdrawn: [
     'Withdrawn',
     '#DFB385',
-    'Assets being Withdrawn from the Silo. At the end of the current Season, Withdrawn assets become Claimable.',
+    'Assets being Withdrawn from the Beaker. At the end of the current Season, Withdrawn assets become Claimable.',
   ],
   claimable: [
     'Claimable',

@@ -64,7 +64,7 @@ const TokenPage: FC<{}> = () => {
       <Stack gap={2} width="100%">
         <PagePath
           items={[
-            { path: '/silo', title: 'Silo' },
+            { path: '/silo', title: 'Beaker' },
             {
               path: `/silo/${whitelistedToken.address}`,
               title: whitelistedToken.name,
@@ -81,7 +81,7 @@ const TokenPage: FC<{}> = () => {
           hideBackButton
           control={
             <GuideButton
-              title="The Farmers' Almanac: Silo Guides"
+              title="The Farmers' Almanac: Beaker Guides"
               guides={guides}
             />
           }

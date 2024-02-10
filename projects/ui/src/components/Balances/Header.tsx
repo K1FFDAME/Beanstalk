@@ -7,7 +7,7 @@ import { PODS, SEEDS, SPROUTS, STALK } from '~/constants/tokens';
 import HeaderItem from '~/components/Balances/HeaderItem';
 
 const STALK_TOOLTIP =
-  'This is your total Stalk balance. Stalk is the governance token of the Pharmacy DAO. Stalk entitles holders to passive interest in the form of a share of future ETHrxn mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Silo.';
+  'This is your total Stalk balance. Stalk is the governance token of the Pharmacy DAO. Stalk entitles holders to passive interest in the form of a share of future ETHrxn mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Beaker.';
 const SEEDS_TOOLTIP =
   'This is your total Seed balance. Each Seed yields 1/10000 Grown Stalk each Season. Grown Stalk must be Mown to add it to your Stalk balance.';
 const PODS_TOOLTIP =

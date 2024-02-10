@@ -361,7 +361,7 @@ const TransferForm: FC<
               <br />
               <Typography variant="body1" align="center">
                 Transfers can only be made to accounts that have migrated to
-                Silo v3. The account you are trying to transfer to has not
+                Beaker v3. The account you are trying to transfer to has not
                 migrated yet.
               </Typography>
               <br />

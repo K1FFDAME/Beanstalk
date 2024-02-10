@@ -73,7 +73,7 @@ const useCardContentWithToken = (token: ERC20Token) => [
     title: 'Earn ETHrxs',
     texts: [
       'Every Season that ETHrxs are minted, receive a share of the newETHrxns based on your percentage ownership of Stalk.',
-      'You can claim your Silo Rewards on the main Silo page.',
+      'You can claim your Beaker Rewards on the main Beaker page.',
     ],
     imageSrc: earnBeansImg, // Made this one a PNG because it contains 4 BeaNFTs which are too big when base64 encoded in an SVG.
   },

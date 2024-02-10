@@ -27,19 +27,19 @@ import usePlantAndDoX from '~/hooks/farmer/form-txn/usePlantAndDoX';
 // -------------------------------------------------------------------------
 
 export type FormTxnRefetchFn =
-  | 'farmerSilo'
+  | 'farmerBeaker'
   | 'farmerField'
   | 'farmerBalances'
   | 'farmerBarn'
-  | 'beanstalkSilo';
+  | 'beanstalkBeaker';
 
 export type FormTxnRefetchConfig<T> = Partial<{ [key in FormTxnRefetchFn]: T }>;
 
 const refetchMapping: Record<FormTxn, FormTxnRefetchFn[]> = {
-  [FormTxn.MOW]: ['farmerSilo'],
-  [FormTxn.PLANT]: ['farmerSilo'],
-  [FormTxn.ENROOT]: ['farmerSilo', 'beanstalkSilo'],
-  [FormTxn.CLAIM]: ['farmerSilo', 'farmerBalances'],
+  [FormTxn.MOW]: ['farmerBeaker'],
+  [FormTxn.PLANT]: ['farmerBeaker'],
+  [FormTxn.ENROOT]: ['farmerBeaker', 'beanstalkBeaker'],
+  [FormTxn.CLAIM]: ['farmerBeaker', 'farmerBalances'],
   [FormTxn.HARVEST]: ['farmerBalances', 'farmerField'],
   [FormTxn.RINSE]: ['farmerBalances', 'farmerBarn'],
 };

@@ -60,7 +60,9 @@ const NextSeason: FC<{ title: string | JSX.Element }> = ({ title }) => (
               icon={<TokenIcon token={BEAN[SupportedChainId.MAINNET]} />}
             >
               <Stat name="New ETHrxs">730,012</Stat>
-              <Stat name="% of new ETHrxs allocated to the Silo">33.3333%</Stat>
+              <Stat name="% of new ETHrxs allocated to the Beaker">
+                33.3333%
+              </Stat>
               <Stat name="My % Ownership of Stalk">0.1012%</Stat>
             </StatColumn>
             {/* Stalk Rewards */}

@@ -51,7 +51,6 @@ const SiloAssetOverviewCard: FC<{ token: ERC20Token }> = ({ token }) => {
   const tokenTVD = tvdByToken[token.address];
   const tokenPctTVD = tokenTVD.div(total).times(100);
 
-
   return (
     <Module>
       <ModuleHeader>
@@ -96,7 +95,7 @@ const SiloAssetOverviewCard: FC<{ token: ERC20Token }> = ({ token }) => {
             />
             <Stat
               gap={0}
-              title="% of TVD in Silo"
+              title="% of TVD in Beaker"
               amount={`${displayFullBN(tokenPctTVD, 2, 2)}%`}
               variant="bodyLarge"
             />

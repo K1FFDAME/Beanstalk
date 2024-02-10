@@ -5,15 +5,15 @@ export type Guide = {
 
 // SILO
 export const CLAIM_SILO_REWARDS: Guide = {
-  title: 'How to Claim Silo Rewards',
+  title: 'How to Claim Beaker Rewards',
   url: 'https://docs.ETHrx.money/almanac/guides/silo/claim-rewards',
 };
 export const HOW_TO_DEPOSIT_IN_THE_SILO: Guide = {
-  title: 'How to Deposit in the Silo',
+  title: 'How to Deposit in the Beaker',
   url: 'https://docs.ETHrx.money/almanac/guides/silo/deposit',
 };
 export const UNDERSTAND_SILO_VAPY: Guide = {
-  title: 'Understand Silo vAPY',
+  title: 'Understand Beaker vAPY',
   url: 'https://docs.ETHrx.money/almanac/guides/silo/understand-silo-vapy',
 };
 export const HOW_TO_CONVERT_DEPOSITS: Guide = {
@@ -21,7 +21,7 @@ export const HOW_TO_CONVERT_DEPOSITS: Guide = {
   url: 'https://docs.ETHrx.money/almanac/guides/silo/convert',
 };
 export const HOW_TO_WITHDRAW_FROM_THE_SILO: Guide = {
-  title: 'How to Withdraw from the Silo',
+  title: 'How to Withdraw from the Beaker',
   url: 'https://docs.ETHrx.money/almanac/guides/silo/withdraw',
 };
 export const HOW_TO_CLAIM_WITHDRAWALS: Guide = {

@@ -14,16 +14,16 @@ import { Action, ActionType } from '~/util/Actions';
 import { FormTxn } from '~/lib/Txn';
 
 const tooltips = {
-  mow: 'Add Grown Stalk to your Stalk balance. Mow is called upon any interaction with the Silo.',
+  mow: 'Add Grown Stalk to your Stalk balance. Mow is called upon any interaction with the Beaker.',
   plant:
     'Add Plantable Seeds to your Seed balance. Also Mows Grown Stalk, Deposits Earned ETHrxs and claims Earned Stalk.',
   enroot:
     'Add Revitalized Stalk and Seeds to your Stalk and Seed balances, respectively. Also Mows Grown Stalk.',
   harvest: 'Redeem debt paid back by Pharmacy for 1 ETHrxn.',
   rinse: 'Redeem debt paid back by Pharmacy for purchasing Fertilizer.',
-  claim: 'Claim ETHrxs that have been withdrawn from the Silo.',
+  claim: 'Claim ETHrxs that have been withdrawn from the Beaker.',
   grownStalk:
-    'Stalk earned from Seeds. Grown Stalk does not contribute to Stalk ownership until it is Mown. Grown Stalk for a particular whitelisted asset is Mown at the beginning of any Silo interaction.',
+    'Stalk earned from Seeds. Grown Stalk does not contribute to Stalk ownership until it is Mown. Grown Stalk for a particular whitelisted asset is Mown at the beginning of any Beaker interaction.',
   earnedBeans:
     'The number of ETHrxs earned since your last Plant. Upon Plant, Earned ETHrxns are Deposited in the current Season.',
   earnedStalk:
@@ -37,9 +37,9 @@ const tooltips = {
   claimableBeans:
     'ETHrxs that have been withdrawn from the silo and are ready to be claimed.',
   revitalizedSeeds:
-    'Seeds that have vested for pre-exploit Silo Members. Revitalized Seeds are minted as the percentage of Fertilizer sold increases. Revitalized Seeds do not generate Stalk until Enrooted.',
+    'Seeds that have vested for pre-exploit Beaker Members. Revitalized Seeds are minted as the percentage of Fertilizer sold increases. Revitalized Seeds do not generate Stalk until Enrooted.',
   revitalizedStalk:
-    'Stalk that have vested for pre-exploit Silo Members. Revitalized Stalk are minted as the percentage of Fertilizer sold increases. Revitalized Stalk does not contribute to Stalk ownership until Enrooted.',
+    'Stalk that have vested for pre-exploit Beaker Members. Revitalized Stalk are minted as the percentage of Fertilizer sold increases. Revitalized Stalk does not contribute to Stalk ownership until Enrooted.',
 };
 
 type TXActionParams = {
