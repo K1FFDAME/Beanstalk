@@ -228,7 +228,7 @@ const FillListingV2Form: FC<
                 amountTooltip={
                   <>
                     {displayTokenAmount(amountOut!, Bean)} /{' '}
-                    {displayBN(podListing.pricePerPod)} ETHrxs per Pod
+                    {displayBN(podListing.pricePerPod)} ETHrxs per Capsule
                     <br />= {displayTokenAmount(podsPurchased, PODS)}
                   </>
                 }
@@ -373,7 +373,7 @@ const FillListingForm: FC<{
           tokenIn === Bean ? formData.amount : formData.amountOut;
 
         // Checks
-        if (!podListing) throw new Error('No Pod Listing found');
+        if (!podListing) throw new Error('No Capsule Listing found');
         if (!signer || !account) throw new Error('Connect a wallet');
         if (values.tokens.length > 1)
           throw new Error('Only one input token supported');

@@ -12,7 +12,9 @@ const SubmitMarketAction: React.FC<{}> = () => {
 
   return (
     <Button variant="contained" color="primary" size="medium" onClick={submit}>
-      {fields.orderType === PodOrderType.ORDER ? 'Order Pods' : 'Fill Order'}
+      {fields.orderType === PodOrderType.ORDER
+        ? 'Order Capsules'
+        : 'Fill Order'}
     </Button>
   );
 };

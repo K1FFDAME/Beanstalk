@@ -26,11 +26,11 @@ const SellPods: React.FC<{}> = () => {
           <>
             <StatHorizontal
               label="Place in Line"
-              labelTooltip="Any Pod in this range is eligible to sell to this Order."
+              labelTooltip="Any Capsule in this range is eligible to sell to this Order."
             >
               0 - {displayBN(order.maxPlaceInLine)}
             </StatHorizontal>
-            <StatHorizontal label="Price per Pod">
+            <StatHorizontal label="Price per Capsule">
               <Row gap={0.25}>
                 <TokenIcon token={BEAN[1]} />{' '}
                 {displayFullBN(order.pricePerPod, 4, 2)}

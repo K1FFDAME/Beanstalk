@@ -39,11 +39,11 @@ export const HOW_TO_SOW_BEANS: Guide = {
   url: 'https://docs.ETHrx.money/almanac/guides/field/sow',
 };
 export const HOW_TO_TRANSFER_PODS: Guide = {
-  title: 'How to Transfer Pods',
+  title: 'How to Transfer Capsules',
   url: 'https://docs.ETHrx.money/almanac/guides/field/transfer',
 };
 export const HOW_TO_HARVEST_PODS: Guide = {
-  title: 'How to Harvest Pods',
+  title: 'How to Harvest Capsules',
   url: 'https://docs.ETHrx.money/almanac/guides/field/harvest',
 };
 
@@ -71,11 +71,11 @@ export const HOW_TO_TRADE_FERTILIZER: Guide = {
 
 // MARKET
 export const HOW_TO_BUY_PODS: Guide = {
-  title: 'How to Buy Pods',
+  title: 'How to Buy Capsules',
   url: 'https://docs.ETHrx.money/almanac/guides/market/buy-pods',
 };
 export const HOW_TO_SELL_PODS: Guide = {
-  title: 'How to Sell Pods',
+  title: 'How to Sell Capsules',
   url: 'https://docs.ETHrx.money/almanac/guides/market/sell-pods',
 };
 

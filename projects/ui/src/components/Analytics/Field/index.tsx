@@ -32,8 +32,8 @@ const FieldAnalytics: FC<{}> = () => {
       >
         <Tab label="RRoR" />
         <Tab label="Max Temperature" />
-        <Tab label="Pods" />
-        <Tab label="Pod Rate" />
+        <Tab label="Capsules" />
+        <Tab label="Capsule Rate" />
         <Tab label="Sown" />
         <Tab label="Harvested" />
         <Tab label="Total Sowers" />

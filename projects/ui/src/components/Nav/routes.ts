@@ -139,7 +139,7 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
   market: [
     {
       path: '/market',
-      title: 'Pod Market',
+      title: 'Capsule Market',
     },
     {
       path: '/market/account',

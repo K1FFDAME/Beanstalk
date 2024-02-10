@@ -62,7 +62,7 @@ const QuickHarvestForm: FC<Props> = ({
       <Stack gap={1}>
         <Stack px={0.5} spacing={0.5}>
           <Row justifyContent="space-between">
-            <Typography color="primary">Harvestable Pods</Typography>
+            <Typography color="primary">Harvestable Capsules</Typography>
             <Row gap={0.5}>
               <TokenIcon token={PODS} />
               <Typography variant="h3">{displayFullBN(amount, 0)}</Typography>
@@ -222,7 +222,7 @@ const HarvestPropProvider: FC<{ quick?: boolean }> = ({ quick = false }) => {
           throw new Error('Connect a wallet first.');
         }
         if (!farmerField.harvestablePods.gt(0)) {
-          throw new Error('No Harvestable Pods.');
+          throw new Error('No Harvestable Capsules.');
         }
         if (!farmerField.harvestablePlots) {
           throw new Error('No Harvestable Plots.');

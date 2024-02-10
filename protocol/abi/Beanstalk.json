@@ -2833,7 +2833,7 @@
         "type": "uint256"
       }
     ],
-    "name": "PodListingCancelled",
+    "name": "CapsuleListingCancelled",
     "type": "event"
   },
   {
@@ -2950,7 +2950,7 @@
   },
   {
     "inputs": [],
-    "name": "remainingPods",
+    "name": "remainingCapsules",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3065,7 +3065,7 @@
   },
   {
     "inputs": [],
-    "name": "totalPods",
+    "name": "totalCapsules",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3168,7 +3168,7 @@
         "type": "uint256"
       }
     ],
-    "name": "PodApproval",
+    "name": "CapsuleApproval",
     "type": "event"
   },
   {
@@ -3201,7 +3201,7 @@
       {
         "indexed": false,
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {
@@ -3235,7 +3235,7 @@
         "type": "uint8"
       }
     ],
-    "name": "PodListingCreated",
+    "name": "CapsuleListingCreated",
     "type": "event"
   },
   {
@@ -3278,7 +3278,7 @@
         "type": "uint256"
       }
     ],
-    "name": "PodListingFilled",
+    "name": "CapsuleListingFilled",
     "type": "event"
   },
   {
@@ -3297,7 +3297,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "PodOrderCancelled",
+    "name": "CapsuleOrderCancelled",
     "type": "event"
   },
   {
@@ -3324,7 +3324,7 @@
       {
         "indexed": false,
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {
@@ -3352,7 +3352,7 @@
         "type": "uint8"
       }
     ],
-    "name": "PodOrderCreated",
+    "name": "CapsuleOrderCreated",
     "type": "event"
   },
   {
@@ -3401,7 +3401,7 @@
         "type": "uint256"
       }
     ],
-    "name": "PodOrderFilled",
+    "name": "CapsuleOrderFilled",
     "type": "event"
   },
   {
@@ -3417,7 +3417,7 @@
         "type": "address"
       }
     ],
-    "name": "allowancePods",
+    "name": "allowanceCapsules",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3441,7 +3441,7 @@
         "type": "uint256"
       }
     ],
-    "name": "approvePods",
+    "name": "approveCapsules",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3454,7 +3454,7 @@
         "type": "uint256"
       }
     ],
-    "name": "cancelPodListing",
+    "name": "cancelCapsuleListing",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3463,7 +3463,7 @@
     "inputs": [
       {
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {
@@ -3482,7 +3482,7 @@
         "type": "uint8"
       }
     ],
-    "name": "cancelPodOrder",
+    "name": "cancelCapsuleOrder",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3510,7 +3510,7 @@
         "type": "uint8"
       }
     ],
-    "name": "cancelPodOrderV2",
+    "name": "cancelCapsuleOrderV2",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3534,7 +3534,7 @@
       },
       {
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {
@@ -3553,7 +3553,7 @@
         "type": "uint8"
       }
     ],
-    "name": "createPodListing",
+    "name": "createCapsuleListing",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3596,7 +3596,7 @@
         "type": "uint8"
       }
     ],
-    "name": "createPodListingV2",
+    "name": "createCapsuleListingV2",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3610,7 +3610,7 @@
       },
       {
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {
@@ -3629,7 +3629,7 @@
         "type": "uint8"
       }
     ],
-    "name": "createPodOrder",
+    "name": "createCapsuleOrder",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -3668,7 +3668,7 @@
         "type": "uint8"
       }
     ],
-    "name": "createPodOrderV2",
+    "name": "createCapsuleOrderV2",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -3705,7 +3705,7 @@
           },
           {
             "internalType": "uint24",
-            "name": "pricePerPod",
+            "name": "pricePerCapsule",
             "type": "uint24"
           },
           {
@@ -3724,7 +3724,7 @@
             "type": "uint8"
           }
         ],
-        "internalType": "struct Listing.PodListing",
+        "internalType": "struct Listing.CapsuleListing",
         "name": "l",
         "type": "tuple"
       },
@@ -3739,7 +3739,7 @@
         "type": "uint8"
       }
     ],
-    "name": "fillPodListing",
+    "name": "fillCapsuleListing",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3770,7 +3770,7 @@
           },
           {
             "internalType": "uint24",
-            "name": "pricePerPod",
+            "name": "pricePerCapsule",
             "type": "uint24"
           },
           {
@@ -3789,7 +3789,7 @@
             "type": "uint8"
           }
         ],
-        "internalType": "struct Listing.PodListing",
+        "internalType": "struct Listing.CapsuleListing",
         "name": "l",
         "type": "tuple"
       },
@@ -3809,7 +3809,7 @@
         "type": "uint8"
       }
     ],
-    "name": "fillPodListingV2",
+    "name": "fillCapsuleListingV2",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3825,7 +3825,7 @@
           },
           {
             "internalType": "uint24",
-            "name": "pricePerPod",
+            "name": "pricePerCapsule",
             "type": "uint24"
           },
           {
@@ -3839,7 +3839,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Order.PodOrder",
+        "internalType": "struct Order.CapsuleOrder",
         "name": "o",
         "type": "tuple"
       },
@@ -3864,7 +3864,7 @@
         "type": "uint8"
       }
     ],
-    "name": "fillPodOrder",
+    "name": "fillCapsuleOrder",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3880,7 +3880,7 @@
           },
           {
             "internalType": "uint24",
-            "name": "pricePerPod",
+            "name": "pricePerCapsule",
             "type": "uint24"
           },
           {
@@ -3894,7 +3894,7 @@
             "type": "uint256"
           }
         ],
-        "internalType": "struct Order.PodOrder",
+        "internalType": "struct Order.CapsuleOrder",
         "name": "o",
         "type": "tuple"
       },
@@ -3924,7 +3924,7 @@
         "type": "uint8"
       }
     ],
-    "name": "fillPodOrderV2",
+    "name": "fillCapsuleOrderV2",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -3938,7 +3938,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "amountPodsFromOrder",
+        "name": "amountCapsulesFromOrder",
         "type": "uint256"
       },
       {
@@ -3981,7 +3981,7 @@
         "type": "bytes"
       }
     ],
-    "name": "getAmountPodsFromFillListingV2",
+    "name": "getAmountCapsulesFromFillListingV2",
     "outputs": [
       {
         "internalType": "uint256",
@@ -4020,7 +4020,7 @@
       },
       {
         "internalType": "uint24",
-        "name": "pricePerPod",
+        "name": "pricePerCapsule",
         "type": "uint24"
       },
       {

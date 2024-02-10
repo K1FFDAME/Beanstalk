@@ -138,7 +138,7 @@ const COLUMNS = {
   pricePerPod: (flex: number) =>
     ({
       field: 'pricePerPod',
-      headerName: 'Price per Pod',
+      headerName: 'Price per Capsule',
       type: 'number',
       align: 'left',
       headerAlign: 'left',
@@ -221,19 +221,19 @@ const COLUMNS = {
         );
         const tip = expiresIn?.gt(0) ? (
           <>
-            If the Pod Line moves forward{' '}
+            If the Capsule Line moves forward{' '}
             {displayFullBN(
               (params.value as BigNumber).minus(harvestableIndex),
               PODS.displayDecimals
             )}{' '}
-            Pods, this Listing will expire.
+            Capsules, this Listing will expire.
           </>
         ) : (
           ''
         );
         return (
           <Tooltip placement="right" title={tip}>
-            <Typography>{displayBN(expiresIn)} Pods</Typography>
+            <Typography>{displayBN(expiresIn)} Capsules</Typography>
           </Tooltip>
         );
       },

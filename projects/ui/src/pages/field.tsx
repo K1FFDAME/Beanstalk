@@ -35,7 +35,7 @@ export const podlineColumns: DataGridProps['columns'] = [
   },
   {
     field: 'amount',
-    headerName: 'Number of Pods',
+    headerName: 'Number of Capsules',
     flex: 1,
     disableColumnMenu: true,
     align: 'right',
@@ -109,7 +109,7 @@ const FieldPage: FC<{}> = () => {
           <Stack gap={2} width="100%" maxWidth={{ lg: '470px' }}>
             <FieldActions />
             <TableCard
-              title="Pod Balance"
+              title="Capsule Balance"
               state={state}
               amount={farmerField.pods}
               rows={rows}

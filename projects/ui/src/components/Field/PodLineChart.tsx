@@ -105,7 +105,7 @@ const PodLineChart: FC<GraphProps> = withTooltip(
                   </Typography>
                 </Row>
                 <Row gap={1} justifyContent="space-between">
-                  <Typography>Num Pods:</Typography>
+                  <Typography>Num Capsules:</Typography>
                   <Typography>
                     {displayBN(new BigNumber(farmerPlots[key]))}
                   </Typography>

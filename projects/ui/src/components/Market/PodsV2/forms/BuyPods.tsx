@@ -27,7 +27,7 @@ const BuyPods: React.FC<{}> = () => {
           <StatHorizontal label="Place in Line">
             {displayBN(listing.placeInLine)}
           </StatHorizontal>
-          <StatHorizontal label="Price per Pod">
+          <StatHorizontal label="Price per Capsule">
             <Row gap={0.25}>
               <TokenIcon token={BEAN[1]} />{' '}
               {displayFullBN(listing.pricePerPod, 4, 2)}
@@ -49,7 +49,7 @@ const BuyPods: React.FC<{}> = () => {
           ) : (
             <Soon>
               <Typography textAlign="center" color="gray">
-                Select a Pod Listing on the chart to buy from.
+                Select a Capsule Listing on the chart to buy from.
               </Typography>
             </Soon>
           )}

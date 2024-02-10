@@ -37,7 +37,7 @@ export default function useFarmerMarketCancelTxn() {
     (listingId: string) => {
       (async () => {
         const txToast = new TransactionToast({
-          loading: 'Cancelling Pod Listing...',
+          loading: 'Cancelling Capsule Listing...',
           success: 'Cancellation successful.',
         });
 
@@ -66,7 +66,7 @@ export default function useFarmerMarketCancelTxn() {
     (order: PodOrder, destination: FarmToMode, before?: () => void) => {
       (async () => {
         const txToast = new TransactionToast({
-          loading: 'Cancelling Pod Order',
+          loading: 'Cancelling Capsule Order',
           success: 'Cancellation successful.',
         });
         try {

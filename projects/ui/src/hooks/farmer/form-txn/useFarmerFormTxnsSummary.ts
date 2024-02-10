@@ -31,7 +31,7 @@ const tooltips = {
   earnedSeeds:
     'Seeds earned in conjunction with Earned ETHrxs. Plantable Seeds must be Planted in order to grow Stalk.',
   harvestablePods:
-    'The number of Pods that have become redeemable for 1 ETHrx (i.e., the debt paid back by Pharmacy)',
+    'The number of Capsules that have become redeemable for 1 ETHrx (i.e., the debt paid back by Pharmacy)',
   rinsableSprouts:
     'Precursors that are redeemable for 1 ETHrx each. Rinsable Precursors must be Rinsed in order to use them.',
   claimableBeans:
@@ -226,7 +226,7 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
         },
         summary: [
           {
-            description: 'Harvestable Pods',
+            description: 'Harvestable Capsules',
             tooltip: tooltips.harvestablePods,
             token: PODS,
             amount: harvestablePods,

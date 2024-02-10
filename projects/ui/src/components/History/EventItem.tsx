@@ -142,7 +142,7 @@ const EventItem: FC<EventItemProps> = ({ event, account }) => {
         BEAN[SupportedChainId.MAINNET].decimals
       );
 
-      eventTitle = 'Pod Harvest';
+      eventTitle = 'Capsule Harvest';
       amountOut = <TokenDisplay color="red" input={[beans, PODS]} />;
       amountIn = (
         <TokenDisplay
@@ -157,7 +157,7 @@ const EventItem: FC<EventItemProps> = ({ event, account }) => {
     // during this Fill by scanning Events. This is too complex to
     // do efficiently in the frontend so it should be likely be
     // moved to the subgraph.
-    case 'PodOrderFilled': {
+    case 'CapsuleOrderFilled': {
       const values = event.args;
       // const pods = toTokenUnitsBN(values.amount, BEAN.decimals);
       if (values?.to.toString().toLowerCase() === account) {

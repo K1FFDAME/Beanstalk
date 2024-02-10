@@ -113,7 +113,7 @@ const CreateListingV2Form: FC<
               </Alert>
             ) : null}
             <FieldWrapper
-              label="Price per Pod"
+              label="Price per Capsule"
               tooltip={POD_MARKET_TOOLTIPS.pricePerPodListing}
             >
               <TokenInputField
@@ -138,8 +138,8 @@ const CreateListingV2Form: FC<
             </FieldWrapper>
             <FarmModeField
               name="destination"
-              circDesc="When Pods are sold, send ETHrxs to your wallet."
-              farmDesc="When Pods are sold, send ETHrxs to your internalETHrxnstalk balance."
+              circDesc="When Capsules are sold, send ETHrxs to your wallet."
+              farmDesc="When Capsules are sold, send ETHrxs to your internalETHrxnstalk balance."
               label="Send proceeds to"
             />
             {isSubmittable && (
@@ -272,7 +272,7 @@ const CreateListingV2: FC<{}> = () => {
           throw new Error('This listing would expire after the Plot harvests.');
 
         txToast = new TransactionToast({
-          loading: 'Listing Pods...',
+          loading: 'Listing Capsules...',
           success: 'List successful.',
         });
 

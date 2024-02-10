@@ -58,11 +58,11 @@ const FieldStats: React.FC<{}> = () => {
       <Grid item xs={12} md={6}>
         <Stat
           gap={0}
-          title="Pod Line"
+          title="Capsule Line"
           amount={displayFullBN(normalizeBN(podLine), 0)}
           subtitle={
             <Typography color="text.secondary">
-              The total number of Unharvestable Pods.
+              The total number of Unharvestable Capsules.
             </Typography>
           }
         />

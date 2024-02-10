@@ -45,9 +45,9 @@ const LiquidityByState: FC<CardProps> = ({ sx }) => {
       amount: beanstalkSilo.seeds.total,
     }, */
     {
-      title: 'Pods',
+      title: 'Capsules',
       tooltip:
-        'The total number of Unharvestable Pods. Pods become Harvestable on a FIFO basis.',
+        'The total number of Unharvestable Capsules. Capsules become Harvestable on a FIFO basis.',
       token: PODS,
       amount: beanstalkField.podLine,
     },

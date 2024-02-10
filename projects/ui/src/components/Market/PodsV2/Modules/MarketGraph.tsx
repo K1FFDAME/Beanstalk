@@ -587,8 +587,8 @@ const Graph: FC<GraphProps> = ({
           setSelectedPoint(undefined);
           hideTooltip();
         }
-        return
-      };
+        return;
+      }
       const newSelectdPoint: SelectedPoint = {
         type: 'listing',
         index,
@@ -608,8 +608,8 @@ const Graph: FC<GraphProps> = ({
           setSelectedPoint(undefined);
           hideTooltip();
         }
-        return
-      };
+        return;
+      }
       if (!selectedPoint || selectedPoint.index !== index) {
         setSelectedPoint({
           type: 'order',
@@ -835,7 +835,7 @@ const Graph: FC<GraphProps> = ({
                     : displayBN(
                         orders[cursorPoint.index].podAmountRemaining
                       )}{' '}
-                  Pods
+                  Capsules
                 </Row>
               </TooltipCard>
             </Tooltip>

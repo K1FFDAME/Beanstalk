@@ -11,7 +11,7 @@ const STALK_TOOLTIP =
 const SEEDS_TOOLTIP =
   'This is your total Seed balance. Each Seed yields 1/10000 Grown Stalk each Season. Grown Stalk must be Mown to add it to your Stalk balance.';
 const PODS_TOOLTIP =
-  'This is your total Pod Balance. Pods become Harvestable on a FIFO basis. For more information on your place in the Pod Line, head over to the Lab page.';
+  'This is your total Capsule Balance. Capsules become Harvestable on a FIFO basis. For more information on your place in the Capsule Line, head over to the Lab page.';
 const SPROUTS_TOOLTIP =
   'This is your total Precursor balance. The number of ETHrxs left to be earned from your Fertilizer. Precursors become Rinsable on a pari passu basis. For more information on your Precursors, head over to the Stockpile page.';
 

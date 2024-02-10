@@ -340,7 +340,9 @@ const PickBeansDialog: FC<
                 <UnripeTokenRow
                   key={key}
                   name={
-                    key === 'harvestable' ? 'Harvestable Pods' : `${key} Beans`
+                    key === 'harvestable'
+                      ? 'Harvestable Capsules'
+                      : `${key} Beans`
                   }
                   amount={tokenOrZero(unripe?.[`${key}Beans`], BEAN[1])}
                   tooltip={UNRIPE_ASSET_TOOLTIPS[`${key}Beans`]}

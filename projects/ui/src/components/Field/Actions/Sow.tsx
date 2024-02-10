@@ -328,7 +328,7 @@ const SowForm: FC<
                 <Divider sx={{ my: 2, opacity: 0.4 }} />
                 <Box pb={1}>
                   <Typography variant="body2" alignItems="center">
-                    Pods become <strong>Harvestable</strong> on a first in,
+                    Capsules become <strong>Harvestable</strong> on a first in,
                     first out{' '}
                     <Link
                       href="https://docs.bean.money/almanac/protocol/glossary#fifo"
@@ -338,8 +338,8 @@ const SowForm: FC<
                     >
                       (FIFO)
                     </Link>{' '}
-                    basis. Upon <strong>Harvest</strong>, each Pod is redeemed
-                    for{' '}
+                    basis. Upon <strong>Harvest</strong>, each Capsule is
+                    redeemed for{' '}
                     <span>
                       <TokenIcon
                         token={Bean}

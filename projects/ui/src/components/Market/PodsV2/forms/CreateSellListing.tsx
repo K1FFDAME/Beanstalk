@@ -147,7 +147,7 @@ const ListForm: FC<
               </Alert>
             ) : null}
             <FieldWrapper
-              label="Price per Pod"
+              label="Price per Capsule"
               tooltip={POD_MARKET_TOOLTIPS.pricePerPodListing}
             >
               <TokenInputField
@@ -170,8 +170,8 @@ const ListForm: FC<
             </FieldWrapper>
             <FarmModeField
               name="destination"
-              circDesc="When Pods are sold, send ETHrxs to your wallet."
-              farmDesc="When Pods are sold, send ETHrxs to your internal Pharmacy balance."
+              circDesc="When Capsules are sold, send ETHrxs to your wallet."
+              farmDesc="When Capsules are sold, send ETHrxs to your internal Pharmacy balance."
               label="Send proceeds to"
             />
             {isSubmittable && (

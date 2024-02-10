@@ -70,13 +70,13 @@ const FillOrder: React.FC<{}> = () => {
           <StatHorizontal label="Place in Line">
             0 - {displayBN(podOrder.maxPlaceInLine)}
           </StatHorizontal>
-          <StatHorizontal label="Pods Requested">
+          <StatHorizontal label="Capsules Requested">
             <Row gap={0.25}>
               <TokenIcon token={PODS} />{' '}
               {displayBN(podOrder.podAmountRemaining)}
             </Row>
           </StatHorizontal>
-          <StatHorizontal label="Price per Pod">
+          <StatHorizontal label="Price per Capsule">
             <Row gap={0.25}>
               <TokenIcon token={BEAN[1]} />{' '}
               {displayFullBN(podOrder.pricePerPod)}

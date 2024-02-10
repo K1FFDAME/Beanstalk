@@ -183,7 +183,7 @@ const CreateOrderV2Form: FC<
       <Stack gap={1.5}>
         <FieldWrapper
           label="Max Place in Line"
-          tooltip="The maximum Place in Line in which you are willing to buy Pods at the following price."
+          tooltip="The maximum Place in Line in which you are willing to buy Capsules at the following price."
         >
           <Box px={1.7}>
             <SliderField
@@ -202,11 +202,11 @@ const CreateOrderV2Form: FC<
           />
         </FieldWrapper>
         <FieldWrapper
-          label="Price per Pod"
+          label="Price per Capsule"
           tooltip={POD_MARKET_TOOLTIPS.pricePerPodOrder}
         >
           <TokenInputField
-            name="pricePerPod"
+            name="pricePerCapsule"
             placeholder="0.0000"
             InputProps={PricePerPodInputProps}
             max={ONE_BN}
@@ -423,7 +423,7 @@ const CreateOrderProvider: FC<{}> = () => {
 
         ///
         txToast = new TransactionToast({
-          loading: 'Ordering Pods...',
+          loading: 'Ordering Capsules...',
           success: 'Order successful.',
         });
 

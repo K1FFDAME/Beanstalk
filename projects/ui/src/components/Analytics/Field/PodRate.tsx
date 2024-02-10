@@ -18,9 +18,9 @@ const getValue = (season: SnapshotData<SeasonalPodRateQuery>) =>
   parseFloat(season.podRate) * 100;
 const formatValue = (value: number) => `${value.toFixed(2)}%`;
 const statProps = {
-  title: 'Pod Rate',
+  title: 'Capsule Rate',
   titleTooltip:
-    'The ratio of Unharvestable Pods per ETHrx, displayed as a percentage, at the beginning of every Season. The Pod Rate is used by Pharmacy as a proxy for its health.',
+    'The ratio of Unharvestable Capsules per ETHrx, displayed as a percentage, at the beginning of every Season. The Capsule Rate is used by Pharmacy as a proxy for its health.',
   gap: 0.25,
   sx: { ml: 0 },
 };

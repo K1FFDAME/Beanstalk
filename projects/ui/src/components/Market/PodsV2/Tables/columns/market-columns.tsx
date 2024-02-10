@@ -222,7 +222,7 @@ export const MarketColumns = {
                   </StatHorizontal>
                   <Typography fontSize="inherit">
                     <InfoOutlinedIcon fontSize="inherit" sx={{ mb: -0.3 }} />{' '}
-                    Any Pod before {displayBN(params.value)} can Fill this
+                    Any Capsule before {displayBN(params.value)} can Fill this
                     Order.
                   </Typography>
                 </Stack>
@@ -254,12 +254,12 @@ export const MarketColumns = {
                 hasExpiry ? (
                   <Stack gap={0.5}>
                     <StatHorizontal label="Expires in">
-                      {displayFullBN(expiry)} Pods
+                      {displayFullBN(expiry)} Capsules
                     </StatHorizontal>
                     <Typography fontSize="inherit">
                       <InfoOutlinedIcon fontSize="inherit" sx={{ mb: -0.3 }} />{' '}
                       This Listing will automatically expire when{' '}
-                      {displayBN(expiry)} more Pods become Harvestable.
+                      {displayBN(expiry)} more Capsules become Harvestable.
                       {/* <InfoOutlinedIcon fontSize="inherit" sx={{ mb: -0.3 }} /> This Listing will automatically expire when the Pod Line moves forward by {displayBN(expiry)} Pods. */}
                     </Typography>
                   </Stack>
@@ -572,7 +572,7 @@ export const MarketColumns = {
             placement="right"
             title={
               <>
-                <StatHorizontal label="Pods Remaining">
+                <StatHorizontal label="Capsules Remaining">
                   {displayFullBN(params.row.podAmountRemaining, 6, 0)}
                 </StatHorizontal>
               </>

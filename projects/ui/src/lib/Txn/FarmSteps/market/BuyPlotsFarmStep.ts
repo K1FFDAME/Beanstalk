@@ -8,10 +8,10 @@ import {
   TokenValue,
 } from '@beanstalk/sdk';
 import BigNumber from 'bignumber.js';
+import { ethers } from 'ethers';
 import { PreferredToken } from '~/hooks/farmer/usePreferredToken';
 import { FarmStep } from '~/lib/Txn/Interface';
 import { BEAN, PODS } from '~/constants/tokens';
-import { ethers } from 'ethers';
 import { toStringBaseUnitBN, tokenValueToBN } from '~/util';
 
 export class BuyPlotsFarmStep extends FarmStep {
@@ -62,7 +62,7 @@ export class BuyPlotsFarmStep extends FarmStep {
 
     this.pushInput({ input: podOrder });
 
-    console.debug('[BuyPodsFarmStep][build]', this.getFarmInput());
+    console.debug('[BuyCapsulesFarmStep][build]', this.getFarmInput());
 
     return this;
   }

@@ -69,12 +69,12 @@ const FillListing: React.FC<{}> = () => {
         <StatHorizontal label="Place in Line">
           {displayBN(podListing.placeInLine)}
         </StatHorizontal>
-        <StatHorizontal label="Pods Available">
+        <StatHorizontal label="Capsules Available">
           <Row gap={0.25}>
             <TokenIcon token={PODS} /> {displayBN(podListing.remainingAmount)}
           </Row>
         </StatHorizontal>
-        <StatHorizontal label="Price per Pod">
+        <StatHorizontal label="Price per Capsule">
           <Row gap={0.25}>
             <TokenIcon token={BEAN[1]} />{' '}
             {displayFullBN(podListing.pricePerPod, 4, 2)}
