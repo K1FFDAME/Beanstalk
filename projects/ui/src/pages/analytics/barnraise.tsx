@@ -54,7 +54,7 @@ const BarnraiseAnalytics: FC<{}> = () => {
           <Grid item xs={12} md={4}>
             <Card sx={{ p: 2 }}>
               <Stat
-                title="Current Penalty for Ripening"
+                title="Current Penalty for Pillning"
                 color={BeanstalkPalette.washedRed}
                 amount={`${displayBN(new BigNumber(95))}%`}
               />

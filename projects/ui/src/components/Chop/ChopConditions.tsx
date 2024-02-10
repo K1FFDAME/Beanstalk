@@ -36,7 +36,7 @@ const ChopConditions: FC<{}> = () => {
           <Grid item xs={6} md={3.7}>
             <Stack gap={0.5}>
               <Tooltip
-                title="The claim to future Ripe assets you are forfeiting by Chopping."
+                title="The claim to future Pill assets you are forfeiting by Chopping."
                 placement="top"
               >
                 <Typography

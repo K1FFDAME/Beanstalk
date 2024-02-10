@@ -51,17 +51,17 @@ export const STATE_CONFIG = {
       `Circulating ${name} in the Beanstalk Farms and Bean Sprout multisig wallets.`,
   ],
   ripe: [
-    'Ripe',
+    'Pill',
     colors.primary,
     (name: string) =>
       `${name} minted as the percentage of Fertilizer sold increases. Ripe ${name} are the ${name} underlying Unripe ${name}. ${
         name === 'ETHrxs'
-          ? 'Does not include ETHrxs that make up Ripe BEANETH.'
+          ? 'Does not include ETHrxs that make up Pill BEANETH.'
           : ''
       }`,
   ],
   ripePooled: [
-    'Ripe Pooled',
+    'Pill Pooled',
     colors.chart.primaryLight,
     (name: string) => `Pooled ${name} that make up Ripe BEANETH.`,
   ],

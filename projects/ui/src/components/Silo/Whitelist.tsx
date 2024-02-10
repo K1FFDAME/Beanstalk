@@ -350,7 +350,7 @@ const Whitelist: FC<{
                                   title={
                                     <Row gap={0.5}>
                                       <TokenIcon token={underlyingToken!} />{' '}
-                                      Ripe {underlyingToken!.symbol}
+                                      Pill {underlyingToken!.symbol}
                                     </Row>
                                   }
                                   gap={0.25}
