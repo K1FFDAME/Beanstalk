@@ -177,7 +177,7 @@ const NFTPage: FC<{}> = () => {
                 ? (currentCollection = true)
                 : (currentCollection = false);
               break;
-            case 'Barn Raise':
+            case 'Stockpile Raise':
               nftContract === BEANFT_BARNRAISE_ADDRESSES[1]
                 ? (currentCollection = true)
                 : (currentCollection = false);

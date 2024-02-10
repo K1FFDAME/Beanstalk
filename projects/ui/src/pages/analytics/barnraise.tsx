@@ -25,7 +25,7 @@ const BarnraiseAnalytics: FC<{}> = () => {
   if (chainId === SupportedChainId.MAINNET) {
     return (
       <Container maxWidth="lg">
-        <ComingSoonCard title="Barn Raise Analytics" />
+        <ComingSoonCard title="Stockpile Raise Analytics" />
       </Container>
     );
   }

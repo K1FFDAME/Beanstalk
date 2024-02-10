@@ -75,9 +75,9 @@ const FieldInfo: React.FC<{}> = () => {
                 the Temperature at the time of Sowing. Newly issued Pods
                 accumulate in the back of the Pod Line. The front of the Pod
                 Line receives 1/3 of new ETHrx mints when there are outstanding
-                Precursors (Precursors are issued by the Barn). If there are no
-                outstanding Precursors, the front of the Pod Line receives 1/2
-                of new ETHrx mints.
+                Precursors (Precursors are issued by the Stockpile). If there
+                are no outstanding Precursors, the front of the Pod Line
+                receives 1/2 of new ETHrx mints.
               </Typography>
               <Typography>
                 Pods become Harvestable (redeemable) into ETHrxs on a FIFO

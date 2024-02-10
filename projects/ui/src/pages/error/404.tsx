@@ -16,7 +16,7 @@ const PageNotFound: FC<{}> = () => (
         <Box
           component="img"
           src={forecast}
-          alt="Barn"
+          alt="Stockpile"
           sx={{ maxWidth: 400, marginBottom: 20 }}
         />
         <Typography variant="h1">404 error</Typography>

@@ -30,7 +30,7 @@ export type FormTxnRefetchFn =
   | 'farmerBeaker'
   | 'farmerField'
   | 'farmerBalances'
-  | 'farmerBarn'
+  | 'farmerStockpile'
   | 'beanstalkBeaker';
 
 export type FormTxnRefetchConfig<T> = Partial<{ [key in FormTxnRefetchFn]: T }>;
@@ -41,7 +41,7 @@ const refetchMapping: Record<FormTxn, FormTxnRefetchFn[]> = {
   [FormTxn.ENROOT]: ['farmerBeaker', 'beanstalkBeaker'],
   [FormTxn.CLAIM]: ['farmerBeaker', 'farmerBalances'],
   [FormTxn.HARVEST]: ['farmerBalances', 'farmerField'],
-  [FormTxn.RINSE]: ['farmerBalances', 'farmerBarn'],
+  [FormTxn.RINSE]: ['farmerBalances', 'farmerStockpile'],
 };
 
 type FormTxnRefetch = (

@@ -13,7 +13,7 @@ const ComingSoonCard: FC<{ title: string }> = ({ title }) => (
       justifyContent="center"
       gap={4}
     >
-      <img src={forecast} alt="Barn" css={{ maxWidth: 400 }} />
+      <img src={forecast} alt="Stockpile" css={{ maxWidth: 400 }} />
       <Typography variant="h1">The {title} page is coming soon</Typography>
       <Stack direction="column" gap={2}>
         <Button
@@ -24,7 +24,7 @@ const ComingSoonCard: FC<{ title: string }> = ({ title }) => (
           size="large"
           sx={{ px: 4 }}
         >
-          Support the Barn Raise
+          Support the Stockpile Raise
         </Button>
       </Stack>
     </Stack>

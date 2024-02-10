@@ -16,14 +16,14 @@ export type FertilizerTooltip = {
 export const BUY_FERTILIZER: FertilizerTooltip = {
   name: 'buy-fertilizer',
   humidity: 'Humidity, the interest rate on buying Fertilizer.',
-  fertilizer: '1 FERT = 1 USDC put into the Barn Raise.',
+  fertilizer: '1 FERT = 1 USDC put into the Stockpile Raise.',
   reward: 'The number of ETHrxs to be earned from this Fertilizer.',
 };
 
 export const MY_FERTILIZER: FertilizerTooltip = {
   name: 'my-fertilizer',
   humidity: 'Humidity',
-  fertilizer: '1 FERT = 1 USDC put into the Barn Raise.',
+  fertilizer: '1 FERT = 1 USDC put into the Stockpile Raise.',
   reward: (fertilized: BigNumber, unfertilized: BigNumber) => (
     <Stack width={200}>
       <Row justifyContent="space-between">

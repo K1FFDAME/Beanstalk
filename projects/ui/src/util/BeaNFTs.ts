@@ -109,7 +109,7 @@ export async function loadNFTs(account: string) {
           barnRaiseNFTs.push({
             id: element,
             account: account.toLowerCase(),
-            subcollection: 'Barn Raise',
+            subcollection: 'Stockpile Raise',
           });
         });
       }

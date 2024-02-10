@@ -26,7 +26,7 @@ const Barn: FC<{}> = () => (
         OuterStackProps={{ direction: 'row' }}
         control={
           <GuideButton
-            title="The Farmers' Almanac: Barn Guides"
+            title="The Farmers' Almanac: Stockpile Guides"
             guides={[
               UNDERSTAND_FERT_VAPY,
               HOW_TO_BUY_FERTILIZER,
