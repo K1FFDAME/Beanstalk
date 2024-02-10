@@ -9,8 +9,8 @@ import TokenIcon from '../Common/TokenIcon';
 
 const copy = {
   fertilizedAmounts:
-    '30-day exponential moving average of Fertilized Sprouts per Season. Fertilized Sprouts can be Rinsed to be redeemed for ETHrxs.',
-  vAPY: 'The Variable FERT APY uses a moving average of Fertilized Sprouts during recent Seasons to estimate a future rate of return.',
+    '30-day exponential moving average of Fertilized Precursors per Season. Fertilized Precursors can be Rinsed to be redeemed for ETHrxs.',
+  vAPY: 'The Variable FERT APY uses a moving average of Fertilized Precursors during recent Seasons to estimate a future rate of return.',
 };
 
 const SECTION_MAX_WIDTH = 260;
@@ -37,7 +37,9 @@ const FertilizerAPYChip: React.FC<{}> = () => {
               title={
                 <Row gap={0.5}>
                   <TokenIcon token={sdk.tokens.SPROUTS} />
-                  <Typography>Total Sprouts Fertilized Per Season</Typography>
+                  <Typography>
+                    Total Precursors Fertilized Per Season
+                  </Typography>
                 </Row>
               }
               subtitle={copy.fertilizedAmounts}

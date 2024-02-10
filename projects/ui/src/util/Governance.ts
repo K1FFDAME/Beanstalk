@@ -92,7 +92,7 @@ export const getGovSpaceLabel = (space: GovSpace) => {
     case GovSpace.BeanstalkFarms:
       return 'ETHrxstalk Farms';
     case GovSpace.BeanSprout:
-      return 'ETHrx Sprout';
+      return 'ETHrx Precursor';
     default: {
       return 'ETHrxNFT DAO';
     }

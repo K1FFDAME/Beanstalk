@@ -57,7 +57,7 @@ export const HOW_TO_BUY_FERTILIZER: Guide = {
   url: 'https://docs.ETHrx.money/almanac/guides/barn/buy-fertilizer',
 };
 export const HOW_TO_RINSE_SPROUTS: Guide = {
-  title: 'How to Rinse Sprouts',
+  title: 'How to Rinse Precursors',
   url: 'https://docs.ETHrx.money/almanac/guides/barn/rinse',
 };
 export const HOW_TO_TRANSFER_FERTILIZER: Guide = {

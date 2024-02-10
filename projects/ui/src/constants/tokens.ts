@@ -103,7 +103,7 @@ export const PODS = new BeanstalkToken(SupportedChainId.MAINNET, '', 6, {
 });
 
 export const SPROUTS = new BeanstalkToken(SupportedChainId.MAINNET, '', 6, {
-  name: 'Sprouts',
+  name: 'Precursors',
   symbol: 'SPROUT',
   logo: sproutLogo,
 });
@@ -113,7 +113,7 @@ export const RINSABLE_SPROUTS = new BeanstalkToken(
   '',
   6,
   {
-    name: 'Rinsable Sprouts',
+    name: 'Rinsable Precursors',
     symbol: 'rSPROUT',
     logo: rinsableSproutLogo,
   }

@@ -57,7 +57,7 @@ const QuickRinseForm: FC<Props> = ({ values, isSubmitting, SPROUTS }) => {
       <Stack gap={1}>
         <Stack sx={{ px: 0.5 }} spacing={0.5}>
           <Row justifyContent="space-between">
-            <Typography color="primary">Rinsable Sprouts</Typography>
+            <Typography color="primary">Rinsable Precursors</Typography>
             <Row gap={0.5}>
               <TokenIcon token={SPROUTS} />
               <Typography variant="h3">
@@ -193,7 +193,7 @@ const RinsePropProvider: FC<{ quick?: boolean }> = ({ quick }) => {
         const account = await sdk.getAccount();
         if (!account) throw new Error('Connect a wallet first.');
         if (!farmerBarn.fertilizedSprouts) {
-          throw new Error('No Sprouts to Rinse.');
+          throw new Error('No Precursors to Rinse.');
         }
         if (!values.destination) throw new Error('No destination set.');
 

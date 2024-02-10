@@ -276,7 +276,7 @@ const BuyForm: FC<
                   <Divider sx={{ my: 2, opacity: 0.4 }} />
                   <Box sx={{ pb: 1 }}>
                     <Typography variant="body2">
-                      Sprouts become <strong>Rinsable</strong> on a{' '}
+                      Precursors become <strong>Rinsable</strong> on a{' '}
                       <Link
                         href="https://docs.bean.money/almanac/protocol/glossary#pari-passu"
                         target="_blank"
@@ -285,7 +285,7 @@ const BuyForm: FC<
                       >
                         pari passu
                       </Link>{' '}
-                      basis. Upon <strong>Rinse</strong>, each Sprout is
+                      basis. Upon <strong>Rinse</strong>, each Precursor is
                       redeemed for{' '}
                       <span>
                         <TokenIcon

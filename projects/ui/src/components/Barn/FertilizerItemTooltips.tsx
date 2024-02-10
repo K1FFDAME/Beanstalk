@@ -34,7 +34,7 @@ export const MY_FERTILIZER: FertilizerTooltip = {
         </Row>
       </Row>
       <Row justifyContent="space-between">
-        <Typography>Rinsable Sprouts:</Typography>
+        <Typography>Rinsable Precursors:</Typography>
         <Row alignItems="center" gap={0.2}>
           <TokenIcon token={RINSABLE_SPROUTS} css={{ width: '14px' }} />
           <Typography>{displayBN(fertilized)}</Typography>

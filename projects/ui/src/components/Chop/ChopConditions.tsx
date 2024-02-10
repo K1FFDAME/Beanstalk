@@ -90,7 +90,7 @@ const ChopConditions: FC<{}> = () => {
           <Grid item xs={6} md={4.6}>
             <Stack gap={0.5}>
               <Tooltip
-                title="The percentage of Sprouts that have become Rinsable."
+                title="The percentage of Precursors that have become Rinsable."
                 placement="top"
               >
                 <Typography variant="body1">

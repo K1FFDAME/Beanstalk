@@ -129,7 +129,7 @@ const FertilizerItem: FC<
               color="text.primary"
               fontWeight={fontWeight}
             >
-              Sprouts
+              Precursors
             </Typography>
             <Row alignItems="center" gap={0.2}>
               <TokenIcon token={SPROUTS} css={{ width: '14px' }} />

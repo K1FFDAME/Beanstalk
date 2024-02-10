@@ -52,9 +52,9 @@ const LiquidityByState: FC<CardProps> = ({ sx }) => {
       amount: beanstalkField.podLine,
     },
     {
-      title: 'Sprouts',
+      title: 'Precursors',
       tooltip:
-        'The total number of Unrinsable Sprouts. Sprouts are the number of ETHrxs left to be earned from Active Fertilizer. Sprouts become Rinsable on a pari passu basis.',
+        'The total number of Unrinsable Precursors. Precursors are the number of ETHrxs left to be earned from Active Fertilizer. Precursors become Rinsable on a pari passu basis.',
       token: SPROUTS,
       amount: beanstalkBarn.unfertilized,
     },

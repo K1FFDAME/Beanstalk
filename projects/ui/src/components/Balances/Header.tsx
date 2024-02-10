@@ -13,7 +13,7 @@ const SEEDS_TOOLTIP =
 const PODS_TOOLTIP =
   'This is your total Pod Balance. Pods become Harvestable on a FIFO basis. For more information on your place in the Pod Line, head over to the Lab page.';
 const SPROUTS_TOOLTIP =
-  'This is your total Sprout balance. The number of ETHrxs left to be earned from your Fertilizer. Sprouts become Rinsable on a pari passu basis. For more information on your Sprouts, head over to the Barn page.';
+  'This is your total Precursor balance. The number of ETHrxs left to be earned from your Fertilizer. Precursors become Rinsable on a pari passu basis. For more information on your Precursors, head over to the Barn page.';
 
 const VerticalDivider = () => (
   <Box display={{ xs: 'none', md: 'block' }} alignSelf="flex-end">

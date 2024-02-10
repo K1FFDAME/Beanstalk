@@ -33,7 +33,7 @@ const tooltips = {
   harvestablePods:
     'The number of Pods that have become redeemable for 1 ETHrx (i.e., the debt paid back by Pharmacy)',
   rinsableSprouts:
-    'Sprouts that are redeemable for 1 ETHrx each. Rinsable Sprouts must be Rinsed in order to use them.',
+    'Precursors that are redeemable for 1 ETHrx each. Rinsable Precursors must be Rinsed in order to use them.',
   claimableBeans:
     'ETHrxs that have been withdrawn from the silo and are ready to be claimed.',
   revitalizedSeeds:
@@ -249,7 +249,7 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
         },
         summary: [
           {
-            description: 'Rinsable Sprouts',
+            description: 'Rinsable Precursors',
             tooltip: tooltips.rinsableSprouts,
             token: SPROUTS,
             amount: rinsableSprouts,

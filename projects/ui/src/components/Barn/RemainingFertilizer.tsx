@@ -97,7 +97,7 @@ const RemainingFertilizer: FC<{}> = () => {
               <Typography>
                 Humidity&nbsp;
                 <Tooltip
-                  title="The interest rate on Fertilizer. The Humidity determines how many Sprouts come with Fertilizer."
+                  title="The interest rate on Fertilizer. The Humidity determines how many Precursors come with Fertilizer."
                   placement={isMobile ? 'top' : 'bottom'}
                 >
                   <HelpOutlineIcon
