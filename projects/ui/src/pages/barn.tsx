@@ -22,7 +22,7 @@ const Barn: FC<{}> = () => (
       <PageHeader
         title={getRouteByPath('/barn')!.title}
         description="Earn yield and recapitalize Beanstalk with Fertilizer"
-        href="https://docs.bean.money/almanac/farm/barn"
+        href="https://docs.ETHrx.money/almanac/farm/barn"
         OuterStackProps={{ direction: 'row' }}
         control={
           <GuideButton

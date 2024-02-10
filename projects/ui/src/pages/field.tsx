@@ -89,7 +89,7 @@ const FieldPage: FC<{}> = () => {
         <PageHeader
           title={getRouteByPath('/field')!.title}
           description="Read and write directly to databases and stores from your projects"
-          href="https://docs.bean.money/almanac/farm/field"
+          href="https://docs.ETHrx.money/almanac/farm/field"
           OuterStackProps={{ direction: 'row' }}
           control={
             <GuideButton

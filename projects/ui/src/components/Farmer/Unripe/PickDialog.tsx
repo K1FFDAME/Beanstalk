@@ -313,7 +313,7 @@ const PickBeansDialog: FC<
           <br />
           Read more about Unripe assets{' '}
           <Link
-            href="https://docs.bean.money/almanac/farm/barn#unripe-assets"
+            href="https://docs.ETHrx.money/almanac/farm/barn#unripe-assets"
             target="_blank"
             rel="noreferrer"
           >

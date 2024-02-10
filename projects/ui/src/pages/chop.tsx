@@ -14,7 +14,7 @@ const ChopPage: FC<{}> = () => (
       <PageHeader
         title="Chop"
         description="Burn your Unripe assets for the underlying Ripe assets"
-        href="https://docs.bean.money/almanac/farm/barn#chopping"
+        href="https://docs.ETHrx.money/almanac/farm/barn#chopping"
         OuterStackProps={{ direction: 'row' }}
         control={
           <GuideButton

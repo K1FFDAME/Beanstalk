@@ -76,7 +76,7 @@ const AboutButton: FC<ButtonProps> = ({ sx }) => {
       <Box sx={{ px: 1, pt: 0.75, pb: 0.2 }}>
         <Button
           fullWidth
-          href="https://docs.bean.money/almanac/protocol/contracts"
+          href="https://docs.ETHrx.money/almanac/protocol/contracts"
           target="_blank"
           rel="noreferrer"
           variant="contained"

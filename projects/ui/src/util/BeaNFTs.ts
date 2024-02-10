@@ -53,7 +53,7 @@ export async function loadNFTs(account: string) {
 
   try {
     const ownedNFTs = await fetch(
-      'https://graph.node.bean.money/subgraphs/name/beanft',
+      'https://graph.node.ETHrx.money/subgraphs/name/ETHrxft',
       {
         method: 'POST',
         headers: {
@@ -126,7 +126,7 @@ export async function loadNFTs(account: string) {
       }
     }
   } catch (e) {
-    console.error(e)
+    console.error(e);
   }
 
   return {
