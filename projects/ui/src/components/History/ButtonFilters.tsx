@@ -21,7 +21,7 @@ export interface ButtonTabsProps {
 const ButtonFilters: FC<ButtonTabsProps> = () => (
   <Row gap={1}>
     <Box sx={buttonStyle}>
-      <Typography>Silo</Typography>
+      <Typography>Beaker</Typography>
     </Box>
     <Box sx={buttonStyle}>
       <Typography>Field</Typography>

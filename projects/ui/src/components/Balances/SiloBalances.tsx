@@ -285,7 +285,7 @@ const SiloBalances: React.FC<{}> = () => {
                                         <>
                                           The number of {token.symbol}
                                           <br />
-                                          you have Deposited in the Silo.
+                                          you have Deposited in the Beaker.
                                         </>
                                       }
                                     />

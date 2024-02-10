@@ -60,14 +60,16 @@ const SiloBalancesHistory: React.FC<{}> = () => {
           height={300}
           StatProps={{
             title: 'Value Deposited',
-            titleTooltip:
+            titleTooltip: (
               <>
-                  The historical USD value of your Silo Deposits at the beginning of every Season. <br />
+                The historical USD value of your Beaker Deposits at the
+                beginning of every Season. <br />
                 <Typography variant="bodySmall">
-                  Note: Unripe assets are valued based on the current Chop Rate. Earned Beans are shown upon Plant.
+                  Note: Unripe assets are valued based on the current Chop Rate.
+                  Earned Beans are shown upon Plant.
                 </Typography>
               </>
-            ,
+            ),
             gap: 0.25,
           }}
           timeTabParams={timeTabParams}

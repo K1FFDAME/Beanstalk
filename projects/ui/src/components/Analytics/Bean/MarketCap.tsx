@@ -15,7 +15,7 @@ const formatValue = (value: number) =>
 const statProps = {
   title: 'Market Cap',
   titleTooltip:
-    'The USD value of the Bean supply at the beginning of every Season.',
+    'The USD value of the ETHrx supply at the beginning of every Season.',
   gap: 0.25,
 };
 const lineChartProps: Partial<LineChartProps> = {

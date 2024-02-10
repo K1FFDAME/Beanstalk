@@ -24,8 +24,8 @@ const useStatProps = () => {
   const theme = useTheme();
   const isTiny = useMediaQuery(theme.breakpoints.down('md'));
   return {
-    title: isTiny ? 'Supply' : 'Bean Supply',
-    titleTooltip: 'The total Bean supply at the beginning of every Season.',
+    title: isTiny ? 'Supply' : 'ETHrx Supply',
+    titleTooltip: 'The total ETHrx supply at the beginning of every Season.',
     gap: 0.25,
   };
 };

@@ -127,7 +127,9 @@ const AddPlantTxnToggle: React.FC<{
                   {`${actionText || 'Use'} Earned Beans`}
                 </Typography>
                 <Typography variant="body1" color="text.tertiary">
-                  {`Toggle to ${actionText || 'Claim'} Earned Beans in this transaction.`}
+                  {`Toggle to ${
+                    actionText || 'Claim'
+                  } Earned Beans in this transaction.`}
                 </Typography>
               </Stack>
             </Row>
@@ -150,7 +152,7 @@ const AddPlantTxnToggle: React.FC<{
           >
             <Stack gap={1} p={1}>
               <Typography variant="body1" color="text.tertiary">
-                You will claim these Silo rewards:
+                You will claim these Beaker rewards:
               </Typography>
               <Grid container spacing={1} direction="row">
                 {items.map((item, i) => (

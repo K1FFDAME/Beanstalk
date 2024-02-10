@@ -46,9 +46,9 @@ const FieldConditionsHeader: React.FC<{
   return (
     <Row gap={0.2} width="100%" justifyContent="space-between">
       <Typography variant="h4" fontWeight={FontWeight.bold}>
-        {isMobile 
-          ? '🌤️ Field Conditions'
-          : `🌤️ Field Conditions, Season ${season.gt(0) && season.toString()}`}
+        {isMobile
+          ? '🌤️ Lab Conditions'
+          : `🌤️ Lab Conditions, Season ${season.gt(0) && season.toString()}`}
       </Typography>
       <Box onClick={toggleMorning}>
         <Typography
@@ -65,8 +65,8 @@ const FieldConditionsHeader: React.FC<{
               ? 'View Normal'
               : 'View Morning'
             : toggled
-              ? 'View Normal Field Conditions'
-              : 'View Morning Field Conditions'}
+            ? 'View Normal Lab Conditions'
+            : 'View Morning Lab Conditions'}
         </Typography>
       </Box>
     </Row>

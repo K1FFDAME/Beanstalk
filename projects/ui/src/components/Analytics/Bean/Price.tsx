@@ -14,8 +14,8 @@ import { FC } from '~/types';
 const getValue = (season: Season) => parseFloat(season.price);
 const formatValue = (value: number) => `$${value.toFixed(4)}`;
 const statProps = {
-  title: 'Bean Price',
-  titleTooltip: 'The USD price of 1 Bean at the beginning of every Season.',
+  title: 'ETHrx Price',
+  titleTooltip: 'The USD price of 1 ETHrx at the beginning of every Season.',
   gap: 0.25,
 };
 const lineChartProps: Partial<LineChartProps> = {

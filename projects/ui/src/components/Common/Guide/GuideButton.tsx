@@ -16,27 +16,33 @@ export type GuideProps = {
 const GuideButton: FC<{ title: string; guides: Guide[] }> = (props) => {
   const [isOpen, show, hide] = useToggle();
   return (
-    <>
-      <Box display="flex" height="100%" alignItems={{ xs: 'start', sm: 'end' }}>
-        <Button
-          onClick={show}
-          variant="contained"
-          color="primary"
-          sx={{
-            p: 1,
-            borderRadius: 100,
-            minWidth: 0,
-            width: '25px',
-            height: '25px',
-          }}
+    null || (
+      <>
+        <Box
+          display="flex"
+          height="100%"
+          alignItems={{ xs: 'start', sm: 'end' }}
         >
-          <QuestionMarkIcon
-            sx={{ fontSize: FontSize.sm, background: 'primary.main' }}
-          />
-        </Button>
-      </Box>
-      <GuideDialog open={isOpen} onClose={hide} {...props} />
-    </>
+          <Button
+            onClick={show}
+            variant="contained"
+            color="primary"
+            sx={{
+              p: 1,
+              borderRadius: 100,
+              minWidth: 0,
+              width: '25px',
+              height: '25px',
+            }}
+          >
+            <QuestionMarkIcon
+              sx={{ fontSize: FontSize.sm, background: 'primary.main' }}
+            />
+          </Button>
+        </Box>
+        <GuideDialog open={isOpen} onClose={hide} {...props} />
+      </>
+    )
   );
 };
 

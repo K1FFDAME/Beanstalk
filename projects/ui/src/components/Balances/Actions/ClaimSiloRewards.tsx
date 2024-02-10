@@ -51,7 +51,7 @@ const options = [
     hideIfNoUnripe: true,
   },
   {
-    title: 'Claim all Silo Rewards',
+    title: 'Claim all Beaker Rewards',
     description: '',
     value: ClaimRewardsAction.CLAIM_ALL,
     hideIfNoUnripe: true,

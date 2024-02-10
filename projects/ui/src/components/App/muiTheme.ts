@@ -98,7 +98,8 @@ export const BeanstalkPalette = {
   chartStroke: 'rgb(255, 0, 154)',
 
   // Greens
-  logoGreen: '#46B955',
+  // logoGreen: '#46B955',
+  logoGreen: 'black',
   mediumGreen: lighten('#46B955', 0.7),
   lightGreen: '#E1F8E6',
   supportGreen: '#19873B',

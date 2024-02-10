@@ -63,7 +63,7 @@ const SeasonCard: FC<SeasonCardProps> = ({
               textAlign="left"
               color="text.primary"
             >
-              The forecast for Season {season.toString()} is based on data in
+              The prognosis for Season {season.toString()} is based on data in
               the current Season.
             </Typography>
           </Row>
