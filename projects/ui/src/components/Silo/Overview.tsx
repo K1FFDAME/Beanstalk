@@ -31,7 +31,7 @@ const depositStats = (s: BigNumber, v: BigNumber[], d: string) => (
       <>
         The historical USD value of your Beaker Deposits. <br />
         <Typography variant="bodySmall">
-          Note: Unripe assets are valued based on the current Chop Rate. Earned
+          Note: Powder assets are valued based on the current Chop Rate. Earned
           ETHrxs are shown upon Plant.
         </Typography>
       </>

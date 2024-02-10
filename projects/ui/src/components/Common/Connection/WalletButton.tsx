@@ -188,7 +188,7 @@ const WalletButton: FC<{ showFullText?: boolean } & ButtonProps> = ({
           }}
         >
           <Row>
-            <Typography variant="h4">Pick Unripe Assets</Typography>
+            <Typography variant="h4">Pick Powder Assets</Typography>
           </Row>
         </Button>
       </Box>
@@ -207,7 +207,7 @@ const WalletButton: FC<{ showFullText?: boolean } & ButtonProps> = ({
           }}
         >
           <Row alignItems="center">
-            <Typography variant="h4">Chop Unripe Assets</Typography>
+            <Typography variant="h4">Chop Powder Assets</Typography>
           </Row>
         </Button>
       </Box>

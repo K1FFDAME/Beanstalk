@@ -289,29 +289,29 @@ const PickBeansDialog: FC<
   } else if (merkles && (merkles.bean || merkles.bean3crv)) {
     buttonDisabled = false;
     const avail = [];
-    if (merkles.bean) avail.push('Unripe ETHrxs');
-    if (merkles.bean3crv) avail.push('Unripe BEAN:3CRV LP');
+    if (merkles.bean) avail.push('Powder ETHrxs');
+    if (merkles.bean3crv) avail.push('Powder BEAN:3CRV LP');
     buttonText = `Pick ${avail.join(' & ')}`;
   }
 
   const tab0 = (
     <>
       <StyledDialogTitle sx={{ pb: 1 }} onClose={handleDialogClose}>
-        Pick non-Deposited Unripe ETHrxs and Unripe BEAN:ETH LP
+        Pick non-Deposited Powder ETHrxs and Powder BEAN:ETH LP
       </StyledDialogTitle>
       <Row gap={1} pb={2} pl={1} pr={3}>
         <img src={pickImage} alt="pick" css={{ height: 120 }} />
         <Typography sx={{ fontSize: '15px' }} color="text.secondary">
-          To claim non-Deposited Unripe ETHrxs and Unripe BEAN:ETH LP, they must
+          To claim non-Deposited Powder ETHrxs and Powder BEAN:ETH LP, they must
           be Picked. You can Pick assets to your wallet, or Pick and Deposit
           them directly in the Beaker.
           <br />
           <br />
-          Unripe Deposited assets <b>do not need to be Picked</b> and were be
+          Powder Deposited assets <b>do not need to be Picked</b> and were be
           automatically Deposited at Replant.
           <br />
           <br />
-          Read more about Unripe assets{' '}
+          Read more about Powder assets{' '}
           <Link
             href="https://docs.ETHrx.money/almanac/farm/barn#unripe-assets"
             target="_blank"
@@ -459,20 +459,20 @@ const PickBeansDialog: FC<
   const tab1 = (
     <>
       <StyledDialogTitle onBack={handlePreviousTab} onClose={handleDialogClose}>
-        Pick Unripe Assets
+        Pick Powder Assets
       </StyledDialogTitle>
       <StyledDialogContent sx={{ width: isMobile ? null : '560px' }}>
         <Stack gap={0.8}>
           {pickStatus === null ? (
             <>
               <DescriptionButton
-                title="Pick Unripe Assets"
-                description="Claim your Unripe ETHrxs and Unripe LP to your wallet."
+                title="Pick Powder Assets"
+                description="Claim your Powder ETHrxs and Powder LP to your wallet."
                 onClick={handlePick(false)}
               />
               <DescriptionButton
-                title="Pick and Deposit Unripe Assets"
-                description="Claim your Unripe ETHrxs and Unripe LP, then Deposit them in the Beaker to earn yield."
+                title="Pick and Deposit Powder Assets"
+                description="Claim your Powder ETHrxs and Powder LP, then Deposit them in the Beaker to earn yield."
                 onClick={handlePick(true)}
               />
             </>
@@ -493,12 +493,12 @@ const PickBeansDialog: FC<
               )}
               {pickStatus === 'error' && (
                 <Typography color="text.secondary">
-                  Something went wrong while picking your Unripe assets.
+                  Something went wrong while picking your Powder assets.
                 </Typography>
               )}
               {pickStatus === 'success' && (
                 <Typography color="text.secondary">
-                  Unripe Assets picked successfully.
+                  Powder Assets picked successfully.
                 </Typography>
               )}
             </Stack>

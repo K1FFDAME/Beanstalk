@@ -21,7 +21,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "AddUnripeToken",
+    "name": "AddPowderToken",
     "type": "event"
   },
   {
@@ -183,7 +183,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "addUnripeToken",
+    "name": "addPowderToken",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
@@ -415,7 +415,7 @@
         "type": "address"
       }
     ],
-    "name": "getUnderlyingPerUnripeToken",
+    "name": "getUnderlyingPerPowderToken",
     "outputs": [
       {
         "internalType": "uint256",
@@ -453,7 +453,7 @@
         "type": "address"
       }
     ],
-    "name": "isUnripe",
+    "name": "isPowder",
     "outputs": [
       {
         "internalType": "bool",

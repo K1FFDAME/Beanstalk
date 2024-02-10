@@ -172,7 +172,7 @@ export const MigrateTab: FC<{}> = () => {
             {step === 6 && (
               <Stack textAlign="center" spacing={2} maxWidth={500}>
                 <Typography variant="h1">
-                  Unripe Deposits no longer earn Grown Stalk each Season.
+                  Powder Deposits no longer earn Grown Stalk each Season.
                 </Typography>
                 <Typography variant="body1">
                   {bip36} reduced the Seeds per BDV of urETHrx and urETHrx3CRV
@@ -187,7 +187,7 @@ export const MigrateTab: FC<{}> = () => {
                   icon={<></>}
                   sx={{ textAlign: 'left', background: 'white' }}
                 >
-                  <strong>For Unripe holders:</strong> Unripe Depositors
+                  <strong>For Powder holders:</strong> Powder Depositors
                   haven&apos;t lost any Stalk. All Stalk earned up to Season
                   14210 remains.
                 </Alert>

@@ -65,7 +65,7 @@ const BarnraiseAnalytics: FC<{}> = () => {
           <Stack>
             <Tabs value={tab} onChange={handleChangeTab} sx={{ px: 2, pt: 2 }}>
               <Tab label="All Fertilizer" />
-              <Tab label="All Unripe Assets" />
+              <Tab label="All Powder Assets" />
               <Tab label="Forfeitures" />
             </Tabs>
             {/* {tab === 0 && <AllFertilizer season={season} beanPrice={beanPrice} />}

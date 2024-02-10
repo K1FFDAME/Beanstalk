@@ -37,7 +37,7 @@ const DepositedAsset: FC<{
         asset.symbol === 'BEAN'
           ? 'ETHrxs'
           : asset.symbol === 'urBEAN'
-          ? 'Unripe ETHrxs'
+          ? 'Powder ETHrxs'
           : asset.name
       } at the beginning of every Season.`,
       gap: 0.5,

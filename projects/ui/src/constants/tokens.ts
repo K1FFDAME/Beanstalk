@@ -335,7 +335,7 @@ export const UNRIPE_BEAN = {
     UNRIPE_BEAN_ADDRESSES,
     6,
     {
-      name: 'Unripe ETHrx',
+      name: 'Powder ETHrx',
       symbol: 'urBEAN',
       logo: unripeBeanLogoUrl,
       displayDecimals: 2,
@@ -355,7 +355,7 @@ export const UNRIPE_BEAN_WETH = {
     UNRIPE_BEAN_WETH_ADDRESSES,
     6,
     {
-      name: 'Unripe BEAN:ETH LP',
+      name: 'Powder BEAN:ETH LP',
       symbol: 'urBEANETH',
       logo: unripeBeanWethLogoUrl,
       displayDecimals: 2,

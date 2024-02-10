@@ -113,6 +113,6 @@ export const VIEW_PAST_GOV_PROPOSALS: Guide = {
 
 /// CHOP
 export const HOW_TO_CHOP_UNRIPE_BEANS: Guide = {
-  title: 'How to Chop Unripe ETHrxs',
+  title: 'How to Chop Powder ETHrxs',
   url: 'https://docs.ETHrx.money/almanac/guides/unripe-assets/chop-unripe-assets',
 };

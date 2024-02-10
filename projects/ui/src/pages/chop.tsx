@@ -13,7 +13,7 @@ const ChopPage: FC<{}> = () => (
     <Stack spacing={2}>
       <PageHeader
         title="Chop"
-        description="Burn your Unripe assets for the underlying Ripe assets"
+        description="Burn your Powder assets for the underlying Ripe assets"
         href="https://docs.ETHrx.money/almanac/farm/barn#chopping"
         OuterStackProps={{ direction: 'row' }}
         control={
