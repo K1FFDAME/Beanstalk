@@ -88,7 +88,7 @@ export const useFetchBeanstalkSilo = () => {
       sdk.silo.getStemTips([...sdk.tokens.siloWhitelist]),
     ] as const);
 
-    console.debug('[beanstalk/silo/useBeanstalkSilo] RESULT', [
+    console.debug('[beanstalk/silo/useETHrxstalkSilo] RESULT', [
       stalkTotal,
       bdvTotal,
       whitelistedAssetTotals[0],
@@ -158,7 +158,7 @@ export const useFetchBeanstalkSilo = () => {
   }, [sdk, dispatch, Bean.address]);
 
   const clear = useCallback(() => {
-    console.debug('[beanstalk/silo/useBeanstalkSilo] CLEAR');
+    console.debug('[beanstalk/silo/useETHrxstalkSilo] CLEAR');
     dispatch(resetBeanstalkSilo());
   }, [dispatch]);
 

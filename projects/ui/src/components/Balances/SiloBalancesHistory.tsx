@@ -66,7 +66,7 @@ const SiloBalancesHistory: React.FC<{}> = () => {
                 beginning of every Season. <br />
                 <Typography variant="bodySmall">
                   Note: Unripe assets are valued based on the current Chop Rate.
-                  Earned Beans are shown upon Plant.
+                  Earned ETHrxs are shown upon Plant.
                 </Typography>
               </>
             ),

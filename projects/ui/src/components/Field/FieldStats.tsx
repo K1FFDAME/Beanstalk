@@ -50,7 +50,7 @@ const FieldStats: React.FC<{}> = () => {
           }
           subtitle={
             <Typography color="text.secondary">
-              The number of Beans that Beanstalk currently is willing to borrow.
+              The number of ETHrxs that Pharmacy currently is willing to borrow.
             </Typography>
           }
         />

@@ -27,7 +27,7 @@ import { Token as TokenOld } from '~/classes';
 export default function useSdk() {
   const sdk = useContext(BeanstalkSDKContext);
   if (!sdk) {
-    throw new Error('Expected sdk to be used within BeanstalkSDK context');
+    throw new Error('Expected sdk to be used within ETHrxstalkSDK context');
   }
   return useMemo(() => sdk, [sdk]);
 }

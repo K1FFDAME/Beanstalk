@@ -9,7 +9,7 @@ import TokenIcon from '../Common/TokenIcon';
 
 const copy = {
   fertilizedAmounts:
-    '30-day exponential moving average of Fertilized Sprouts per Season. Fertilized Sprouts can be Rinsed to be redeemed for Beans.',
+    '30-day exponential moving average of Fertilized Sprouts per Season. Fertilized Sprouts can be Rinsed to be redeemed for ETHrxs.',
   vAPY: 'The Variable FERT APY uses a moving average of Fertilized Sprouts during recent Seasons to estimate a future rate of return.',
 };
 

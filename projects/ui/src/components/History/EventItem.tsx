@@ -122,7 +122,7 @@ const EventItem: FC<EventItemProps> = ({ event, account }) => {
           .multipliedBy(100)
           .toFixed(0);
 
-        eventTitle = `Bean Sow (${weather}% Temperature)`;
+        eventTitle = `ETHrx Sow (${weather}% Temperature)`;
         amountOut = (
           <TokenDisplay
             color="red"
@@ -131,7 +131,7 @@ const EventItem: FC<EventItemProps> = ({ event, account }) => {
         );
         amountIn = <TokenDisplay color="green" input={[pods, PODS]} />;
       } else {
-        eventTitle = 'Bean Sow';
+        eventTitle = 'ETHrx Sow';
         amountIn = <TokenDisplay color="green" input={[pods, PODS]} />;
       }
       break;

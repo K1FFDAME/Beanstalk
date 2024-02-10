@@ -87,7 +87,11 @@ const PriceButton: FC<ButtonProps> = ({ ...props }) => {
   const isLoading = season.eq(NEW_BN);
   const startIcon = isTiny ? undefined : (
     <img
-      src={bySeason[0]?.rewardBeans.eq(0) || awaiting ? drySeasonIcon : rainySeasonIcon}
+      src={
+        bySeason[0]?.rewardBeans.eq(0) || awaiting
+          ? drySeasonIcon
+          : rainySeasonIcon
+      }
       css={{
         width: 25,
         height: 25,
@@ -121,7 +125,7 @@ const PriceButton: FC<ButtonProps> = ({ ...props }) => {
               <Typography variant="bodySmall">Season</Typography>
             </Grid>
             <Grid item xs={3} md={2} textAlign="right">
-              <Typography variant="bodySmall">New Beans</Typography>
+              <Typography variant="bodySmall">New ETHrxs</Typography>
             </Grid>
             <Grid item xs={3} md={2} textAlign="right">
               <Typography variant="bodySmall">Max Soil</Typography>

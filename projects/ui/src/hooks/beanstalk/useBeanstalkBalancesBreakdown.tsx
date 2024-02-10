@@ -33,13 +33,16 @@ export const STATE_CONFIG = {
   withdrawn: [
     'Claimable',
     colors.chart.yellowLight,
-    (name: string) => `Legacy Claimable ${name === 'Beans' ? 'Bean' : name} Withdrawals from before Silo V3.`,
+    (name: string) =>
+      `Legacy Claimable ${
+        name === 'ETHrxs' ? 'ETHrxn' : name
+      } Withdrawals from before Silo V3.`,
   ],
   farmable: [
     'Farm & Circulating',
     colors.chart.green,
     (name: string) =>
-      `Farm ${name} are stored in Beanstalk. Circulating ${name} are in Farmers' wallets.`,
+      `Farm ${name} are stored in Pharmacy. Circulating ${name} are in Farmers' wallets.`,
   ],
   budget: [
     'Budget',
@@ -52,8 +55,8 @@ export const STATE_CONFIG = {
     colors.primary,
     (name: string) =>
       `${name} minted as the percentage of Fertilizer sold increases. Ripe ${name} are the ${name} underlying Unripe ${name}. ${
-        name === 'Beans'
-          ? 'Does not include Beans that make up Ripe BEANETH.'
+        name === 'ETHrxs'
+          ? 'Does not include ETHrxs that make up Ripe BEANETH.'
           : ''
       }`,
   ],
@@ -206,11 +209,11 @@ export default function useBeanstalkSiloBreakdown() {
 
               // Ripe Pooled = BEAN:ETH_RESERVES * (Ripe BEAN:ETH / BEAN:ETH Token Supply)
               ripePooled = new BigNumber(totalPooled).multipliedBy(
-                 new BigNumber(
-                   unripeTokenState[ripeToUnripe[BeanETH.address].address]
-                     ?.underlying || 0
-                 ).div(new BigNumber(poolState[BeanETH.address]?.supply || 0))
-               );
+                new BigNumber(
+                  unripeTokenState[ripeToUnripe[BeanETH.address].address]
+                    ?.underlying || 0
+                ).div(new BigNumber(poolState[BeanETH.address]?.supply || 0))
+              );
               // pooled = new BigNumber(totalPooled).minus(ripePooled);
 
               farmable = beanSupply

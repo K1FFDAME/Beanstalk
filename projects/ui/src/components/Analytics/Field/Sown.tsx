@@ -17,8 +17,9 @@ const getValue = (season: SnapshotData<SeasonalSownQuery>) =>
 const formatValue = (value: number) =>
   `${value.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
 const statProps = {
-  title: 'Beans Sown',
-  titleTooltip: 'The total number of Beans Sown at the beginning of every Season.',
+  title: 'ETHrxs Sown',
+  titleTooltip:
+    'The total number of ETHrxs Sown at the beginning of every Season.',
   gap: 0.25,
   sx: { ml: 0 },
 };

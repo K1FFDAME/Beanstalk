@@ -35,9 +35,9 @@ const DepositedAsset: FC<{
       title: `Total Deposited ${asset.symbol}`,
       titleTooltip: `The total number of Deposited ${
         asset.symbol === 'BEAN'
-          ? 'Beans'
+          ? 'ETHrxs'
           : asset.symbol === 'urBEAN'
-          ? 'Unripe Beans'
+          ? 'Unripe ETHrxs'
           : asset.name
       } at the beginning of every Season.`,
       gap: 0.5,

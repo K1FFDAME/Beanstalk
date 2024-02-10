@@ -35,7 +35,7 @@ export const HOW_TO_TRANSFER_DEPOSITS: Guide = {
 
 // FIELD
 export const HOW_TO_SOW_BEANS: Guide = {
-  title: 'How to Sow Beans',
+  title: 'How to Sow ETHrxs',
   url: 'https://docs.bean.money/almanac/guides/field/sow',
 };
 export const HOW_TO_TRANSFER_PODS: Guide = {
@@ -93,7 +93,7 @@ export const HOW_TO_MINT_BEANFTS: Guide = {
 
 // SWAP
 export const HOW_TO_TRADE_BEANS: Guide = {
-  title: 'How to Trade Beans',
+  title: 'How to Trade ETHrxs',
   url: 'https://docs.bean.money/almanac/guides/swap/trade-beans',
 };
 export const HOW_TO_TRANSFER_BALANCES: Guide = {
@@ -108,11 +108,11 @@ export const HOW_TO_VOTE: Guide = {
 };
 export const VIEW_PAST_GOV_PROPOSALS: Guide = {
   title: 'View Past Governance Proposals',
-  url: 'https://github.com/BeanstalkFarms/Beanstalk-Governance-Proposals',
+  url: 'https://github.com/ETHrxstalkFarmsETHrxnstalk-Governance-Proposals',
 };
 
 /// CHOP
 export const HOW_TO_CHOP_UNRIPE_BEANS: Guide = {
-  title: 'How to Chop Unripe Beans',
+  title: 'How to Chop Unripe ETHrxs',
   url: 'https://docs.bean.money/almanac/guides/unripe-assets/chop-unripe-assets',
 };

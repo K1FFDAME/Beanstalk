@@ -54,26 +54,26 @@ import { FC } from '~/types';
 
 type UnripeKeys =
   // Beans
-  | 'circulatingBeans'
-  | 'withdrawnBeans'
-  | 'harvestableBeans'
-  | 'orderedBeans'
-  | 'farmableBeans'
-  | 'farmBeans'
-  | 'unripeBeans'
+  | 'circulatingETHrxs'
+  | 'withdrawnETHrxs'
+  | 'harvestableETHrxs'
+  | 'orderedETHrxs'
+  | 'farmableETHrxs'
+  | 'farmETHrxs'
+  | 'unripeETHrxs'
   // LP
-  | 'circulatingBeanEthLp'
-  | 'circulatingBeanLusdLp'
-  | 'circulatingBean3CrvLp'
-  | 'withdrawnBeanEthLp'
-  | 'withdrawnBeanLusdLp'
-  | 'withdrawnBean3CrvLp'
-  | 'circulatingBeanEthBdv'
-  | 'circulatingBeanLusdBdv'
-  | 'circulatingBean3CrvBdv'
-  | 'withdrawnBeanEthBdv'
-  | 'withdrawnBeanLusdBdv'
-  | 'withdrawnBean3CrvBdv'
+  | 'circulatingETHrxEthLp'
+  | 'circulatingETHrxLusdLp'
+  | 'circulatingETHrx3CrvLp'
+  | 'withdrawnETHrxEthLp'
+  | 'withdrawnETHrxLusdLp'
+  | 'withdrawnETHrx3CrvLp'
+  | 'circulatingETHrxEthBdv'
+  | 'circulatingETHrxLusdBdv'
+  | 'circulatingETHrx3CrvBdv'
+  | 'withdrawnETHrxEthBdv'
+  | 'withdrawnETHrxLusdBdv'
+  | 'withdrawnETHrx3CrvBdv'
   | 'unripeLp';
 type GetUnripeResponse = Partial<{ [key in UnripeKeys]: string }>;
 
@@ -90,15 +90,15 @@ const UNRIPE_BEAN_CATEGORIES = [
 
 const UNRIPE_LP_CATEGORIES = [
   {
-    key: 'BeanEth',
+    key: 'ETHrxEth',
     token: BEAN_ETH_UNIV2_LP[1],
   },
   {
-    key: 'Bean3Crv',
+    key: 'ETHrx3Crv',
     token: BEAN_CRV3_LP[1],
   },
   {
-    key: 'BeanLusd',
+    key: 'ETHrxLusd',
     token: BEAN_LUSD_LP[1],
   },
 ] as const;
@@ -289,7 +289,7 @@ const PickBeansDialog: FC<
   } else if (merkles && (merkles.bean || merkles.bean3crv)) {
     buttonDisabled = false;
     const avail = [];
-    if (merkles.bean) avail.push('Unripe Beans');
+    if (merkles.bean) avail.push('Unripe ETHrxs');
     if (merkles.bean3crv) avail.push('Unripe BEAN:3CRV LP');
     buttonText = `Pick ${avail.join(' & ')}`;
   }
@@ -297,12 +297,12 @@ const PickBeansDialog: FC<
   const tab0 = (
     <>
       <StyledDialogTitle sx={{ pb: 1 }} onClose={handleDialogClose}>
-        Pick non-Deposited Unripe Beans and Unripe BEAN:ETH LP
+        Pick non-Deposited Unripe ETHrxs and Unripe BEAN:ETH LP
       </StyledDialogTitle>
       <Row gap={1} pb={2} pl={1} pr={3}>
         <img src={pickImage} alt="pick" css={{ height: 120 }} />
         <Typography sx={{ fontSize: '15px' }} color="text.secondary">
-          To claim non-Deposited Unripe Beans and Unripe BEAN:ETH LP, they must
+          To claim non-Deposited Unripe ETHrxs and Unripe BEAN:ETH LP, they must
           be Picked. You can Pick assets to your wallet, or Pick and Deposit
           them directly in the Silo.
           <br />
@@ -333,7 +333,7 @@ const PickBeansDialog: FC<
              * Section 2a: Beans by State
              */}
             <Typography variant="h4">
-              Non-Deposited pre-exploit Bean balances
+              Non-Deposited pre-exploit ETHrx balances
             </Typography>
             <Stack gap={0.5} pl={1}>
               {UNRIPE_BEAN_CATEGORIES.map((key) => (
@@ -353,9 +353,9 @@ const PickBeansDialog: FC<
              * Section 3b: Total Unripe Beans
              */}
             <Row justifyContent="space-between" pl={1}>
-              <Typography>Unripe Beans available to Pick</Typography>
+              <Typography>Unripe ETHrxs available to Pick</Typography>
               <Row gap={0.3}>
-                <img src={unripeBeanIcon} alt="Circulating Beans" width={13} />
+                <img src={unripeBeanIcon} alt="Circulating ETHrxs" width={13} />
                 <Typography variant="h4">
                   {displayFullBN(
                     // HOTFIX:
@@ -418,7 +418,7 @@ const PickBeansDialog: FC<
             <Row justifyContent="space-between" pl={1}>
               <Typography>Unripe BEAN:ETH LP available to Pick</Typography>
               <Row gap={0.3}>
-                <img src={brownLPIcon} alt="Circulating Beans" width={13} />
+                <img src={brownLPIcon} alt="Circulating ETHrxs" width={13} />
                 <Typography variant="h4">
                   {displayFullBN(tokenOrZero(unripe?.unripeLp, BEAN[1]))}
                 </Typography>
@@ -467,12 +467,12 @@ const PickBeansDialog: FC<
             <>
               <DescriptionButton
                 title="Pick Unripe Assets"
-                description="Claim your Unripe Beans and Unripe LP to your wallet."
+                description="Claim your Unripe ETHrxs and Unripe LP to your wallet."
                 onClick={handlePick(false)}
               />
               <DescriptionButton
                 title="Pick and Deposit Unripe Assets"
-                description="Claim your Unripe Beans and Unripe LP, then Deposit them in the Beaker to earn yield."
+                description="Claim your Unripe ETHrxs and Unripe LP, then Deposit them in the Beaker to earn yield."
                 onClick={handlePick(true)}
               />
             </>

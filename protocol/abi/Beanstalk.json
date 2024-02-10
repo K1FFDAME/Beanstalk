@@ -950,7 +950,7 @@
   },
   {
     "inputs": [],
-    "name": "totalFertilizedBeans",
+    "name": "totalFertilizedETHrxs",
     "outputs": [
       {
         "internalType": "uint256",
@@ -963,7 +963,7 @@
   },
   {
     "inputs": [],
-    "name": "totalFertilizerBeans",
+    "name": "totalFertilizerETHrxs",
     "outputs": [
       {
         "internalType": "uint256",
@@ -976,7 +976,7 @@
   },
   {
     "inputs": [],
-    "name": "totalUnfertilizedBeans",
+    "name": "totalUnfertilizedETHrxs",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3274,7 +3274,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "costInBeans",
+        "name": "costInETHrxs",
         "type": "uint256"
       }
     ],
@@ -3397,7 +3397,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "costInBeans",
+        "name": "costInETHrxs",
         "type": "uint256"
       }
     ],
@@ -3947,7 +3947,7 @@
         "type": "bytes"
       }
     ],
-    "name": "getAmountBeansToFillOrderV2",
+    "name": "getAmountETHrxsToFillOrderV2",
     "outputs": [
       {
         "internalType": "uint256",
@@ -3972,7 +3972,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "fillBeanAmount",
+        "name": "fillETHrxAmount",
         "type": "uint256"
       },
       {
@@ -4750,7 +4750,7 @@
         "type": "uint256"
       }
     ],
-    "name": "unripeBeanToBDV",
+    "name": "unripeETHrxToBDV",
     "outputs": [
       {
         "internalType": "uint256",
@@ -5456,7 +5456,7 @@
         "type": "address"
       }
     ],
-    "name": "balanceOfEarnedBeans",
+    "name": "balanceOfEarnedETHrxs",
     "outputs": [
       {
         "internalType": "uint256",
@@ -6199,7 +6199,7 @@
   },
   {
     "inputs": [],
-    "name": "totalEarnedBeans",
+    "name": "totalEarnedETHrxs",
     "outputs": [
       {
         "internalType": "uint256",

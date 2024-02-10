@@ -17,7 +17,7 @@ export const BUY_FERTILIZER: FertilizerTooltip = {
   name: 'buy-fertilizer',
   humidity: 'Humidity, the interest rate on buying Fertilizer.',
   fertilizer: '1 FERT = 1 USDC put into the Barn Raise.',
-  reward: 'The number of Beans to be earned from this Fertilizer.',
+  reward: 'The number of ETHrxs to be earned from this Fertilizer.',
 };
 
 export const MY_FERTILIZER: FertilizerTooltip = {

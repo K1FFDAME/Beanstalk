@@ -175,7 +175,7 @@ export default function ClaimBeanDrawerContent<T>({
       <Card {...sharedCardProps}>
         <Stack gap={1} p={1}>
           <Typography variant="body1" color="text.tertiary">
-            Which Beans would you like to Claim?
+            Which ETHrxs would you like to Claim?
           </Typography>
           <Stack gap={1} direction={{ xs: 'column', sm: 'row' }}>
             {Object.entries(optionsMap).map(([k, item]) => (
@@ -208,7 +208,7 @@ export default function ClaimBeanDrawerContent<T>({
         <Card {...sharedCardProps}>
           <Stack gap={1} p={1}>
             <Typography variant="body1" color="text.tertiary">
-              Amount of Claimable Beans to use in this transaction:
+              Amount of Claimable ETHrxs to use in this transaction:
             </Typography>
             <TokenQuoteProviderWithParams<T>
               name={name}
@@ -231,7 +231,7 @@ export default function ClaimBeanDrawerContent<T>({
         <Card {...sharedCardProps}>
           <Stack gap={1} p={1}>
             <Typography variant="body1" color="text.tertiary">
-              You&apos;re using fewer than your total Claimable Beans in this
+              You&apos;re using fewer than your total Claimable ETHrxs in this
               transaction. Where would you like to send the remainder?
             </Typography>
             <Stack gap={1}>

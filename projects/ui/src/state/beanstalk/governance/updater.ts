@@ -49,11 +49,18 @@ export const useFetchBeanstalkGovernance = () => {
               /// array can have `null` elements. I believe this shouldn't
               /// be allowed, but to fix we check for null values and manually
               /// assert existence of `p`.
-              .filter((p) => p !== null && (
-                (p.title.startsWith("BIP") || p.title.startsWith("BOP")) && p.space?.id === "beanstalkdao.eth" || 
-                (p.title.startsWith("Temp-Check") || p.title.startsWith("BFCP")) && p.space?.id === "beanstalkfarms.eth" || 
-                p.title.startsWith("BSP") && p.space?.id === "wearebeansprout.eth" || 
-                p.title.startsWith("BNP") && p.space?.id === "beanft.eth"))
+              .filter(
+                (p) =>
+                  p !== null &&
+                  (((p.title.startsWith('BIP') || p.title.startsWith('BOP')) &&
+                    p.space?.id === 'beanstalkdao.eth') ||
+                    ((p.title.startsWith('Temp-Check') ||
+                      p.title.startsWith('BFCP')) &&
+                      p.space?.id === 'beanstalkfarms.eth') ||
+                    (p.title.startsWith('BSP') &&
+                      p.space?.id === 'wearebeansprout.eth') ||
+                    (p.title.startsWith('BNP') && p.space?.id === 'beanft.eth'))
+              )
               .map((p) => ({
                 id: p!.id,
                 title: p!.title,
@@ -80,7 +87,7 @@ export const useFetchBeanstalkGovernance = () => {
   }, [beanstalk, getProposals, Bean.address, dispatch]);
 
   const clear = useCallback(() => {
-    console.debug('[beanstalk/governance/useBeanstalkGovernance] CLEAR');
+    console.debug('[beanstalk/governance/useETHrxstalkGovernance] CLEAR');
     dispatch(resetBeanstalkGovernance());
   }, [dispatch]);
 

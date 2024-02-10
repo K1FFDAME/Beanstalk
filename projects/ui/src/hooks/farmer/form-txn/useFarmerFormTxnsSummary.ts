@@ -16,26 +16,26 @@ import { FormTxn } from '~/lib/Txn';
 const tooltips = {
   mow: 'Add Grown Stalk to your Stalk balance. Mow is called upon any interaction with the Silo.',
   plant:
-    'Add Plantable Seeds to your Seed balance. Also Mows Grown Stalk, Deposits Earned Beans and claims Earned Stalk.',
+    'Add Plantable Seeds to your Seed balance. Also Mows Grown Stalk, Deposits Earned ETHrxs and claims Earned Stalk.',
   enroot:
     'Add Revitalized Stalk and Seeds to your Stalk and Seed balances, respectively. Also Mows Grown Stalk.',
-  harvest: 'Redeem debt paid back by Beanstalk for 1 Bean.',
-  rinse: 'Redeem debt paid back by Beanstalk for purchasing Fertilizer.',
-  claim: 'Claim Beans that have been withdrawn from the Silo.',
+  harvest: 'Redeem debt paid back by Pharmacy for 1 ETHrxn.',
+  rinse: 'Redeem debt paid back by Pharmacy for purchasing Fertilizer.',
+  claim: 'Claim ETHrxs that have been withdrawn from the Silo.',
   grownStalk:
     'Stalk earned from Seeds. Grown Stalk does not contribute to Stalk ownership until it is Mown. Grown Stalk for a particular whitelisted asset is Mown at the beginning of any Silo interaction.',
   earnedBeans:
-    'The number of Beans earned since your last Plant. Upon Plant, Earned Beans are Deposited in the current Season.',
+    'The number of ETHrxs earned since your last Plant. Upon Plant, Earned ETHrxns are Deposited in the current Season.',
   earnedStalk:
-    'Stalk earned from Earned Beans. Earned Stalk automatically contribute to Stalk ownership even before claiming.',
+    'Stalk earned from Earned ETHrxs. Earned Stalk automatically contribute to Stalk ownership even before claiming.',
   earnedSeeds:
-    'Seeds earned in conjunction with Earned Beans. Plantable Seeds must be Planted in order to grow Stalk.',
+    'Seeds earned in conjunction with Earned ETHrxs. Plantable Seeds must be Planted in order to grow Stalk.',
   harvestablePods:
-    'The number of Pods that have become redeemable for 1 Bean (i.e., the debt paid back by Beanstalk)',
+    'The number of Pods that have become redeemable for 1 ETHrx (i.e., the debt paid back by Pharmacy)',
   rinsableSprouts:
-    'Sprouts that are redeemable for 1 Bean each. Rinsable Sprouts must be Rinsed in order to use them.',
+    'Sprouts that are redeemable for 1 ETHrx each. Rinsable Sprouts must be Rinsed in order to use them.',
   claimableBeans:
-    'Beans that have been withdrawn from the silo and are ready to be claimed.',
+    'ETHrxs that have been withdrawn from the silo and are ready to be claimed.',
   revitalizedSeeds:
     'Seeds that have vested for pre-exploit Silo Members. Revitalized Seeds are minted as the percentage of Fertilizer sold increases. Revitalized Seeds do not generate Stalk until Enrooted.',
   revitalizedStalk:
@@ -163,7 +163,7 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
         enabled: earnedSeeds.gt(0),
         summary: [
           {
-            description: 'Earned Beans',
+            description: 'Earned ETHrxs',
             tooltip: tooltips.earnedBeans,
             token: BEAN,
             amount: earnedBeans,
@@ -259,7 +259,10 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
           {
             type: ActionType.RINSE,
             amount: rinsableSprouts,
-            destination: mode === 'plantToggle' ? (values.destination || FarmToMode.INTERNAL) : values.destination,
+            destination:
+              mode === 'plantToggle'
+                ? values.destination || FarmToMode.INTERNAL
+                : values.destination,
           },
         ],
       },
@@ -273,7 +276,7 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
         },
         summary: [
           {
-            description: 'Claimable Beans',
+            description: 'Claimable ETHrxs',
             tooltip: tooltips.claimableBeans,
             token: BEAN,
             amount: claimableBeans,
@@ -300,7 +303,7 @@ export default function useFarmerFormTxnsSummary(mode?: 'plantToggle') {
     revitalizedStalk,
     sdk.tokens,
     values.destination,
-    mode
+    mode,
   ]);
 
   /**

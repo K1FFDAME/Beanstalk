@@ -56,11 +56,11 @@ const NextSeason: FC<{ title: string | JSX.Element }> = ({ title }) => (
           <Grid container columnSpacing={4}>
             {/* Bean Rewards */}
             <StatColumn
-              title="Bean Rewards"
+              title="ETHrx Rewards"
               icon={<TokenIcon token={BEAN[SupportedChainId.MAINNET]} />}
             >
-              <Stat name="New Beans">730,012</Stat>
-              <Stat name="% of new Beans allocated to the Silo">33.3333%</Stat>
+              <Stat name="New ETHrxs">730,012</Stat>
+              <Stat name="% of new ETHrxs allocated to the Silo">33.3333%</Stat>
               <Stat name="My % Ownership of Stalk">0.1012%</Stat>
             </StatColumn>
             {/* Stalk Rewards */}
@@ -78,7 +78,7 @@ const NextSeason: FC<{ title: string | JSX.Element }> = ({ title }) => (
         <Box sx={{ px: 2 }}>
           <Grid container columnSpacing={4}>
             <StatColumn
-              title="My New Earned Beans"
+              title="My New Earned ETHrxs"
               icon={
                 <>
                   <Row gap={0.3}>

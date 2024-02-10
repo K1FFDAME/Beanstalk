@@ -60,14 +60,14 @@ const UnripeTokenRow: FC<{
             gap={0.5}
           >
             <Row gap={0.3}>
-              <img src={token.logo} alt="Circulating Beans" height={13} />
+              <img src={token.logo} alt="Circulating ETHrxs" height={13} />
               <Typography sx={{ color: primaryColor }}>
                 {displayFullBN(amount)}
               </Typography>
             </Row>
             <Row gap={0.3}>
               <Typography sx={{ color: primaryColor }}>(</Typography>
-              <img src={greenBeanIcon} alt="Circulating Beans" width={13} />
+              <img src={greenBeanIcon} alt="Circulating ETHrxs" width={13} />
               <Typography sx={{ color: primaryColor }}>
                 {displayFullBN(bdv)})
               </Typography>
@@ -76,7 +76,7 @@ const UnripeTokenRow: FC<{
         ) : (
           // Bean states
           <Row gap={0.3}>
-            <img src={greenBeanIcon} alt="Circulating Beans" width={13} />
+            <img src={greenBeanIcon} alt="Circulating ETHrxs" width={13} />
             <Typography
               sx={{
                 fontSize: '16px',

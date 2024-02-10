@@ -12,8 +12,8 @@ export const POD_MARKET_TOOLTIPS: { [key: string]: any | React.ReactElement } =
     start: 'The start index in this Plot that you would like to List.',
     end: 'The end index in this Plot that you would like to List.',
     amount: 'Number of Pods to List based on the start and end indices.',
-    pricePerPodOrder: 'How much to pay for each Pod, denominated in Beans.',
-    pricePerPodListing: 'How much to sell each Pod for, denominated in Beans.',
+    pricePerPodOrder: 'How much to pay for each Pod, denominated in ETHrxs.',
+    pricePerPodListing: 'How much to sell each Pod for, denominated in ETHrxs.',
     expiresAt:
       'When this many Pods become Harvestable, this Listing will expire.',
   };
@@ -22,18 +22,18 @@ export const UNRIPE_ASSET_TOOLTIPS: {
   [key: string]: string | React.ReactElement;
 } = {
   // Beans
-  circulatingBeans: "Beans that were in Farmers' wallets.",
+  circulatingBeans: "ETHrxs that were in Farmers' wallets.",
   withdrawnBeans:
-    'Beans that were Withdrawn from the Silo. This includes "Withdrawn" and "Claimable" Beans shown on the pre-exploit Beanstalk UI.',
-  harvestableBeans: "Beans from Harvestable Plots that weren't yet Harvested.",
-  orderedBeans: 'Beans that were stored in Pod Orders.',
+    'ETHrxs that were Withdrawn from the Silo. This includes "Withdrawn" and "Claimable" ETHrxns shown on the pre-exploiETHrxanstalk UI.',
+  harvestableBeans: "ETHrxs from Harvestable Plots that weren't yet Harvested.",
+  orderedBeans: 'ETHrxs that were stored in Pod Orders.',
   farmableBeans: (
     <>
-      Previously called <em>Farmable Beans</em> — Beans earned from Silo rewards
-      that had not yet been Deposited in a particular Season.
+      Previously called <em>Farmable ETHrxs</em> —ETHrxns earned from Silo
+      rewards that had not yet been Deposited in a particular Season.
     </>
   ),
-  farmBeans: 'Beans that were stored in Beanstalk but not Deposited.',
+  farmBeans: 'ETHrxs that were stored in Pharmacy but not Deposited.',
   // LP
   circulatingBeanEthLp:
     "BEAN:ETH LP tokens that were in Farmers' wallets. The number of tokens and associated BDV are shown.",

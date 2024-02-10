@@ -205,7 +205,7 @@ const RinsePropProvider: FC<{ quick?: boolean }> = ({ quick }) => {
           success: `Rinse successful. Added ${displayFullBN(
             farmerBarn.fertilizedSprouts,
             SPROUTS.displayDecimals
-          )} Beans to your ${copy.MODES[values.destination]}.`,
+          )} ETHrxs to your ${copy.MODES[values.destination]}.`,
         });
 
         const fertilizerIds = farmerBarn.balances.map((bal) =>

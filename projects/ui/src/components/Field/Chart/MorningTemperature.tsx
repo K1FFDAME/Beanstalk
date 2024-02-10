@@ -312,7 +312,7 @@ const MorningTemperature: React.FC<{
         title="Temperature"
         titleTooltip={
           <Box>
-            The interest rate for Sowing Beans. Beanstalk logarithmically
+            The interest rate for Sowing ETHrxs. Pharmacy logarithmically
             increases the Temperature for the first 25 blocks of each Season up
             to the Max Temperature.
           </Box>

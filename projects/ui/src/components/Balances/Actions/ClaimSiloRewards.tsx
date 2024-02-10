@@ -235,7 +235,7 @@ const RewardsContent: React.FC<{}> = () => {
         <Grid spacing={1} container width="100%" justifyContent="flex-start">
           <Grid item xs={4}>
             <RewardItem
-              title="Earned Beans"
+              title="Earned ETHrxs"
               amount={
                 farmerSilo.beans.earned?.gt(0)
                   ? farmerSilo.beans.earned

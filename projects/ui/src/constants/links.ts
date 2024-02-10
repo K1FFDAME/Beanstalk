@@ -11,33 +11,33 @@ export const COINMARKETCAP_LINK =
   'https://coinmarketcap.com/currencies/beanstalk/';
 export const COMMONWEALTH_LINK = 'https://commonwealth.im/beanstalk/';
 export const DISCORD_LINK = 'https://discord.gg/beanstalk';
-export const GITHUB_LINK = 'https://github.com/BeanstalkFarms/Beanstalk';
+export const GITHUB_LINK = 'https://github.com/ETHrxstalkFarmsETHrxnstalk';
 export const MEDIUM_LINK = 'https://medium.com/beanstalkfarms';
 export const OPENSEA_LINK_GENESIS =
   'https://opensea.io/collection/beanft-genesis';
 export const OPENSEA_LINK_COLLECTION =
   'https://opensea.io/collection/beanft-collection';
-export const REDDIT_LINK = 'https://www.reddit.com/r/BeanstalkProtocol/';
+export const REDDIT_LINK = 'https://www.reddit.com/r/ETHrxstalkProtocol/';
 export const TELEGRAM_LINK = 'https://t.me/joinchat/OdWoJSyPVsRhYzgx';
 export const TWITTER_LINK = 'https://twitter.com/beanstalkmoney';
 export const LICENSE_LINK =
-  'https://github.com/BeanstalkFarms/Beanstalk/blob/master/LICENSE.txt';
+  'https://github.com/ETHrxstalkFarmsETHrxnstalk/blob/master/LICENSE.txt';
 export const CODE_OF_CONDUCT_LINK =
-  'https://github.com/BeanstalkFarms/Beanstalk/blob/master/CODE_OF_CONDUCT.md';
+  'https://github.com/ETHrxstalkFarmsETHrxnstalk/blob/master/CODE_OF_CONDUCT.md';
 export const CURVE_LINK_OLD = 'https://curve.fi/factory/81/';
 export const CURVE_LINK = 'https://curve.fi/#/ethereum/pools/factory-v2-152/';
 export const BASIN_WELL_LINK = 'https://basin.exchange/#/wells/';
 export const LUSD_LINK = 'https://curve.fi/factory/103/';
-export const DUNE_LINK = 'https://dune.xyz/tbiq/Beanstalk';
+export const DUNE_LINK = 'https://dune.xyz/tbiq/ETHrxstalk';
 export const NETLIFY_LINK = 'https://www.netlify.com/';
 export const SNAPSHOT_LINK = 'https://snapshot.org/#/beanstalkdao.eth';
-export const ANALYTICS_LINK = 'https://dune.xyz/tbiq/Beanstalk';
+export const ANALYTICS_LINK = 'https://dune.xyz/tbiq/ETHrxstalk';
 
 /* Path Links */
 export const APY_CALCULATION = '/docs/APY.html';
 export const HOW_TO_PATH = '/docs/How-To.html';
 export const HOW_TO_MOBILE_PATH = '/docs/How-To-Mobile.html';
-export const INTRO_TO_PATH = '/docs/Intro-to-Beanstalk.html';
+export const INTRO_TO_PATH = '/docs/Intro-to-ETHrxstalk.html';
 export const WHITEPAPER = '/docs/beanstalk.pdf';
 
 /* Metamask Links */
@@ -51,9 +51,9 @@ export const BASE_ETHERSCAN_ADDR_LINK = 'https://etherscan.io/address/';
 
 /* Informational Links */
 export const MEDIUM_INTEREST_LINK =
-  'https://medium.com/@BeanstalkFarms/earn-interest-from-beanstalk-just-the-basics-165a8cc5fecd';
+  'https://medium.com/@ETHrxstalkFarms/earn-interest-from-beanstalk-just-the-basics-165a8cc5fecd';
 export const FUNDRAISER_LINK =
-  'https://github.com/BeanstalkFarms/Beanstalk/blob/master/bips/bip-4.md';
+  'https://github.com/ETHrxstalkFarmsETHrxnstalk/blob/master/bips/bip-4.md';
 export const SLIPPAGE_LINK =
   'https://coinmarketcap.com/alexandria/glossary/slippage';
 export const DIAMONDS_LINK = 'https://eips.ethereum.org/EIPS/eip-2535';
@@ -65,9 +65,9 @@ export const BASE_OPENSEA_LINK =
 export const NFT_LINK =
   'https://us-east-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/beanft-orstw/service/beanApi/incoming_webhook/getNFTs';
 export const MEDIUM_NFT_GENESIS_LINK =
-  'https://medium.com/@BeanstalkFarms/the-beanft-genesis-edition-ee6fdadc9124';
+  'https://medium.com/@ETHrxstalkFarms/the-beanft-genesis-edition-ee6fdadc9124';
 export const MEDIUM_NFT_WINTER_LINK =
-  'https://medium.com/@BeanstalkFarms/the-beanft-winter-collection-dec60c0f60c0';
+  'https://medium.com/@ETHrxstalkFarms/the-beanft-winter-collection-dec60c0f60c0';
 
 /* Subgraph Links */
 export const UNI_V2_SUBGRAPH_API_LINK =

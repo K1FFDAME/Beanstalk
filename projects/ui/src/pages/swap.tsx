@@ -12,7 +12,7 @@ const SwapPage: FC<{}> = () => (
     <Stack gap={2}>
       <PageHeader
         title="Swap"
-        description="Trade Beans and transfer Beanstalk assets"
+        description="Trade ETHrxs and transferETHrxnstalk assets"
         href="https://docs.bean.money/almanac/guides/swap"
         control={
           <GuideButton

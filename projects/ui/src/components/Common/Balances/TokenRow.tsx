@@ -93,7 +93,10 @@ const TokenRow: FC<{
         </Tooltip>
       )}
     </Row>
-    <Tooltip title={amountTooltip || ''} placement={amountTooltipLocation || "top-end"}>
+    <Tooltip
+      title={amountTooltip || ''}
+      placement={amountTooltipLocation || 'top-end'}
+    >
       <div>
         <Row gap={0.5}>
           {token && <TokenIcon token={token} />}

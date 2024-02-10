@@ -436,7 +436,7 @@ const Vote: FC<{
         txToast = new TransactionToast({
           loading: 'Voting on proposal...',
           success:
-            'Vote successful. It may take some time for your vote to appear on the Beanstalk UI. Check Snapshot for the latest results.',
+            'Vote successful. It may take some time for your vote to appear on the Pharmacy UI. Check Snapshot for the latest results.',
         });
 
         const hub = `https://hub.snapshot.org/?apiKey=${SNAPSHOT_API_KEY}`;

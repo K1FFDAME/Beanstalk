@@ -228,7 +228,7 @@ const FillListingV2Form: FC<
                 amountTooltip={
                   <>
                     {displayTokenAmount(amountOut!, Bean)} /{' '}
-                    {displayBN(podListing.pricePerPod)} Beans per Pod
+                    {displayBN(podListing.pricePerPod)} ETHrxs per Pod
                     <br />= {displayTokenAmount(podsPurchased, PODS)}
                   </>
                 }

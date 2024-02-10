@@ -197,27 +197,30 @@ export const Migrate: FC<{}> = () => {
               What happens to my Grown Stalk?
             </Typography>
             <Typography variant="body1">
-              All of your Grown Stalk will be Mown and added to your 
-              Stalk balance during the Migration.
+              All of your Grown Stalk will be Mown and added to your Stalk
+              balance during the Migration.
             </Typography>
-            {farmerSilo.stalk.grown.gt(0) &&
+            {farmerSilo.stalk.grown.gt(0) && (
               <Alert
                 variant="outlined"
                 severity="success"
                 icon={<></>}
                 sx={{ textAlign: 'left', background: 'white' }}
               >
-                {`${displayFullBN(farmerSilo.stalk.grown)} Grown Stalk will be Mown.`}
+                {`${displayFullBN(
+                  farmerSilo.stalk.grown
+                )} Grown Stalk will be Mown.`}
               </Alert>
-            }
+            )}
           </Stack>
           <Stack spacing={1}>
             <Typography variant="h4">
-              I had Withdrawn a Deposit but didn&apos;t Claim it, will I lose it when Migrating?
+              I had Withdrawn a Deposit but didn&apos;t Claim it, will I lose it
+              when Migrating?
             </Typography>
             <Typography variant="body1">
-              No. After Migrating, you can Claim your previously Withdrawn assets on the 
-              Claim tab of each individual Deposit page.
+              No. After Migrating, you can Claim your previously Withdrawn
+              assets on the Claim tab of each individual Deposit page.
             </Typography>
           </Stack>
         </Stack>

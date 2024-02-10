@@ -47,7 +47,7 @@ const FieldInfo: React.FC<{}> = () => {
               </Typography>
             </Row>
             <Typography color="text.secondary">
-              Debt repaid by Beanstalk to Pod holders since deployment (does not
+              Debt repaid by Pharmacy to Pod holders since deployment (does not
               count towards the current Pod Line).
             </Typography>
           </Stack>
@@ -61,27 +61,27 @@ const FieldInfo: React.FC<{}> = () => {
           <Typography variant="h4">🌾 Overview</Typography>
           <ThinDivider />
           <Typography>
-            The Field is Beanstalk&#39;s credit facility. Beanstalk relies on a
-            decentralized set of creditors to maintain Bean price stability.
-            Farmers who Sow Beans (lend Beans to Beanstalk) are known as Sowers.
-            Beans are Sown in exchange for Pods, the Beanstalk-native debt
-            asset. Loans to Beanstalk are issued with a fixed interest rate,
+            The Field is Pharmacy&#39;s credit facility. Pharmacy relies on a
+            decentralized set of creditors to maintain ETHrx price stability.
+            Farmers who Sow ETHrxs (lend ETHrxns to Pharmacy) are known as
+            Sowers. ETHrxs are Sown in exchange for Pods, the Pharmacy-native
+            debt asset. Loans to Pharmacy are issued with a fixed interest rate,
             known as Temperature, and an unknown maturity date.
           </Typography>
           {open ? (
             <>
               <Typography>
-                The number of Pods received from 1 Sown Bean is determined by
+                The number of Pods received from 1 Sown ETHrx is determined by
                 the Temperature at the time of Sowing. Newly issued Pods
                 accumulate in the back of the Pod Line. The front of the Pod
-                Line receives 1/3 of new Bean mints when there are outstanding
+                Line receives 1/3 of new ETHrx mints when there are outstanding
                 Sprouts (Sprouts are issued by the Barn). If there are no
                 outstanding Sprouts, the front of the Pod Line receives 1/2 of
-                new Bean mints.
+                new ETHrx mints.
               </Typography>
               <Typography>
-                Pods become Harvestable (redeemable) into Beans on a FIFO basis.
-                Pods are tradeable on the Market.
+                Pods become Harvestable (redeemable) into ETHrxs on a FIFO
+                basis. Pods are tradeable on the Market.
               </Typography>
             </>
           ) : null}

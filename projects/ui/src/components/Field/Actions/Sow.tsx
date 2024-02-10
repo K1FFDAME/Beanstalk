@@ -181,7 +181,7 @@ const SowForm: FC<
         ...newValue,
       ]);
       setFieldValue('farmActions', defaultFarmActionsFormState);
-      setFieldValue('claimableBeans', {
+      setFieldValue('claimableETHrxs', {
         token: Bean,
         amount: null,
       });
@@ -268,7 +268,7 @@ const SowForm: FC<
           balanceFrom={values.balanceFrom}
           disableTokenSelect={!hasSoil || !maxAmountIn}
         />
-        {hasSoil && <ClaimBeanDrawerToggle actionText='Sow'/>}
+        {hasSoil && <ClaimBeanDrawerToggle actionText="Sow" />}
         {!hasSoil ? (
           <Box>
             <WarningAlert sx={{ color: 'black' }}>
@@ -296,8 +296,8 @@ const SowForm: FC<
             {maxAmountUsed && maxAmountUsed.gt(0.9) ? (
               <WarningAlert>
                 If there is less Soil at the time of execution, this transaction
-                will Sow Beans into the remaining Soil and send any unused Beans
-                to your Farm Balance.
+                will Sow ETHrxs into the remaining Soil and send any
+                unusedETHrxns to your Farm Balance.
                 {/* You are Sowing {displayFullBN(maxAmountUsed.times(100), 4, 0)}% of remaining Soil.  */}
               </WarningAlert>
             ) : null}
@@ -366,13 +366,13 @@ const SowForm: FC<
           Sow
         </SmartSubmitButton>
       </Stack>
-      <FormWithDrawer.Drawer title="Sow Claimable Beans">
+      <FormWithDrawer.Drawer title="Sow Claimable ETHrxs">
         <ClaimBeanDrawerContent
           maxBeans={soil}
           beansUsed={beans}
           quoteProviderProps={{
             tokenOut: Bean,
-            name: 'claimableBeans',
+            name: 'claimableETHrxs',
             state: values.claimableBeans,
             params: useClaimedQuoteParams,
             handleQuote,
@@ -516,7 +516,7 @@ const SowFormContainer: FC<{}> = () => {
           loading: `Sowing ${displayFullBN(
             totalBeans,
             bean.decimals
-          )} Beans for ${displayFullBN(amountPods, PODS.decimals)} Pods...`,
+          )} ETHrxs for ${displayFullBN(amountPods, PODS.decimals)} Pods...`,
           success: 'Sow successful.',
         });
 

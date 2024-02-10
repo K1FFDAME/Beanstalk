@@ -170,8 +170,8 @@ const ListForm: FC<
             </FieldWrapper>
             <FarmModeField
               name="destination"
-              circDesc="When Pods are sold, send Beans to your wallet."
-              farmDesc="When Pods are sold, send Beans to your internal Beanstalk balance."
+              circDesc="When Pods are sold, send ETHrxs to your wallet."
+              farmDesc="When Pods are sold, send ETHrxs to your internal Pharmacy balance."
               label="Send proceeds to"
             />
             {isSubmittable && (
@@ -186,7 +186,7 @@ const ListForm: FC<
                           PODS
                         )} at ${displayFullBN(
                           values.pricePerPod || ZERO_BN
-                        )} Beans per Pod from your Plot at ${displayBN(
+                        )} ETHrxs per Pod from your Plot at ${displayBN(
                           placeInLine
                         )} in the Pod Line.`,
                       },

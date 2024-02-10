@@ -159,7 +159,7 @@ const client = createWagmiClient({
     new CoinbaseWalletConnector({
       chains,
       options: {
-        appName: 'Beanstalk',
+        appName: 'Pharmacy',
       },
     }),
   ],

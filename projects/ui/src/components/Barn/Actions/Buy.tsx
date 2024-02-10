@@ -43,7 +43,12 @@ import useFarmerBalances from '~/hooks/farmer/useFarmerBalances';
 import usePreferredToken, {
   PreferredToken,
 } from '~/hooks/farmer/usePreferredToken';
-import { displayTokenAmount, getTokenIndex, normaliseTV, tokenValueToBN } from '~/util';
+import {
+  displayTokenAmount,
+  getTokenIndex,
+  normaliseTV,
+  tokenValueToBN,
+} from '~/util';
 import { useFetchFarmerAllowances } from '~/state/farmer/allowances/updater';
 import { FarmerBalances } from '~/state/farmer/balances';
 import FertilizerItem from '../FertilizerItem';
@@ -206,7 +211,7 @@ const BuyForm: FC<
           balanceFrom={values.balanceFrom}
           params={quoteProviderParams}
         />
-        <ClaimBeanDrawerToggle actionText='Buy Fert with'/>
+        <ClaimBeanDrawerToggle actionText="Buy Fert with" />
         {/* Outputs */}
         {fert?.gt(0) ? (
           <>
@@ -239,21 +244,23 @@ const BuyForm: FC<
                   </>
                 )}{' '}
                 {values.claimableBeans.amount?.gt(0) && (
-                  <> 
-                    {values.tokens[0].amount?.gt(0) && (<>+ </>)} 
+                  <>
+                    {values.tokens[0].amount?.gt(0) && <>+ </>}
                     {displayTokenAmount(
-                      values.claimableBeans.amount, 
-                      sdk.tokens.BEAN, 
+                      values.claimableBeans.amount,
+                      sdk.tokens.BEAN,
                       { showName: false, showSymbol: true }
                     )}
                   </>
                 )}{' '}
                 {values.tokens[0].token.symbol !== 'WETH' && (
-                  <> 
-                    →{' '} 
+                  <>
+                    →{' '}
                     {displayTokenAmount(
-                      values.tokens[0].amountOut?.plus(values.claimableBeans.amountOut || BigNumber(0)) || BigNumber(0), 
-                      sdk.tokens.WETH, 
+                      values.tokens[0].amountOut?.plus(
+                        values.claimableBeans.amountOut || BigNumber(0)
+                      ) || BigNumber(0),
+                      sdk.tokens.WETH,
                       { showName: false, showSymbol: true }
                     )}
                   </>
@@ -311,7 +318,7 @@ const BuyForm: FC<
           Buy
         </SmartSubmitButton>
       </Stack>
-      <FormWithDrawer.Drawer title="Buy Fert with Claimable Beans">
+      <FormWithDrawer.Drawer title="Buy Fert with Claimable ETHrxs">
         <ClaimBeanDrawerContent<BuyQuoteHandlerParams>
           quoteProviderProps={{
             tokenOut: token,

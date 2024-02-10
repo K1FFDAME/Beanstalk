@@ -88,11 +88,11 @@ const SiloAnalytics: FC<{}> = () => {
       )}
       {tab === 5 && <Stalk height={300} />}
       {/* {tab === 5 && <Seeds height={300} />} */}
-      {tab === 6 && <APY height={300} metric="Bean" />}
-      {tab === 7 && <APY height={300} metric="Bean3Curve" />}
-      {tab === 8 && <APY height={300} metric="BeanETHWell" />}
-      {tab === 9 && <APY height={300} metric="UnripeBean" />}
-      {tab === 10 && <APY height={300} metric="UnripeBeanETH" />}
+      {tab === 6 && <APY height={300} metric="ETHrx" />}
+      {tab === 7 && <APY height={300} metric="ETHrx3Curve" />}
+      {tab === 8 && <APY height={300} metric="ETHrxETHWell" />}
+      {tab === 9 && <APY height={300} metric="UnripeETHrx" />}
+      {tab === 10 && <APY height={300} metric="UnripeETHrxETH" />}
     </Card>
   );
 };

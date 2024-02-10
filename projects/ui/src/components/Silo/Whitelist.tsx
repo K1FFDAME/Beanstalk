@@ -113,7 +113,7 @@ const Whitelist: FC<{
               <Tooltip
                 title={
                   <>
-                    The amount of Stalk and Seeds earned for each 1 Bean
+                    The amount of Stalk and Seeds earned for each 1 ETHrx
                     Denominated Value (BDV) Deposited in the Silo.
                   </>
                 }
@@ -125,7 +125,7 @@ const Whitelist: FC<{
                 title={
                   <>
                     <strong>vAPY</strong> (Variable APY) uses historical data
-                    about Beans earned by Stalkholders to estimate future
+                    about ETHrxs earned by Stalkholders to estimate future
                     returns for Depositing assets in the Silo.&nbsp;
                     <Link
                       underline="hover"
@@ -138,7 +138,7 @@ const Whitelist: FC<{
                     </Link>
                     <Divider sx={{ my: 1, borderColor: 'divider' }} />
                     <Typography fontSize={FontSize.sm}>
-                      <strong>Bean vAPY:</strong> Estimated annual Beans earned
+                      <strong>Bean vAPY:</strong> Estimated annual ETHrxs earned
                       by a Stalkholder for Depositing an asset.
                       <br />
                       <strong>Stalk vAPY:</strong> Estimated annual growth in
@@ -210,15 +210,15 @@ const Whitelist: FC<{
               title={
                 <>
                   The value of your Silo deposits for each whitelisted token,
-                  denominated in {denomination === 'bdv' ? 'Beans' : 'USD'}.
+                  denominated in {denomination === 'bdv' ? 'ETHrxs' : 'USD'}.
                   <br />
                   <Typography
                     color="text.secondary"
                     fontSize={FontSize.sm}
                     fontStyle="italic"
                   >
-                    Switch to {denomination === 'bdv' ? 'USD' : 'Beans'}: Option
-                    + F
+                    Switch to {denomination === 'bdv' ? 'USD' : 'ETHrxs'}:
+                    Option + F
                   </Typography>
                 </>
               }

@@ -231,7 +231,9 @@ const DepositForm: FC<
             />
           );
         })}
-        {migrationNeeded === true ? null : <ClaimBeanDrawerToggle actionText="Deposit" />}
+        {migrationNeeded === true ? null : (
+          <ClaimBeanDrawerToggle actionText="Deposit" />
+        )}
         {isReady ? (
           <>
             <TxnSeparator />
@@ -246,7 +248,7 @@ const DepositForm: FC<
                 label={sdk.tokens.STALK.symbol}
                 amount={stalk}
                 description="Stalk Ownership"
-                descriptionTooltip="Your increase in ownership of Beanstalk."
+                descriptionTooltip="Your increase in ownership of Pharmacy."
                 delta={increasedStalkPctStr}
                 amountTooltip={
                   <>
@@ -296,7 +298,7 @@ const DepositForm: FC<
           Deposit
         </SmartSubmitButton>
       </Stack>
-      <FormWithDrawer.Drawer title="Deposit Claimable Beans">
+      <FormWithDrawer.Drawer title="Deposit Claimable ETHrxs">
         <ClaimBeanDrawerContent
           quoteProviderProps={{
             name: 'claimableBeans',

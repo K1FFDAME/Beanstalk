@@ -7,13 +7,13 @@ import { PODS, SEEDS, SPROUTS, STALK } from '~/constants/tokens';
 import HeaderItem from '~/components/Balances/HeaderItem';
 
 const STALK_TOOLTIP =
-  'This is your total Stalk balance. Stalk is the governance token of the Beanstalk DAO. Stalk entitles holders to passive interest in the form of a share of future Bean mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Silo.';
+  'This is your total Stalk balance. Stalk is the governance token of the Pharmacy DAO. Stalk entitles holders to passive interest in the form of a share of future ETHrxn mints, and the right to propose and vote on BIPs. Your Stalk is forfeited when you Withdraw your Deposited assets from the Silo.';
 const SEEDS_TOOLTIP =
   'This is your total Seed balance. Each Seed yields 1/10000 Grown Stalk each Season. Grown Stalk must be Mown to add it to your Stalk balance.';
 const PODS_TOOLTIP =
   'This is your total Pod Balance. Pods become Harvestable on a FIFO basis. For more information on your place in the Pod Line, head over to the Field page.';
 const SPROUTS_TOOLTIP =
-  'This is your total Sprout balance. The number of Beans left to be earned from your Fertilizer. Sprouts become Rinsable on a pari passu basis. For more information on your Sprouts, head over to the Barn page.';
+  'This is your total Sprout balance. The number of ETHrxs left to be earned from your Fertilizer. Sprouts become Rinsable on a pari passu basis. For more information on your Sprouts, head over to the Barn page.';
 
 const VerticalDivider = () => (
   <Box display={{ xs: 'none', md: 'block' }} alignSelf="flex-end">

@@ -30,12 +30,12 @@ export const STATE_CONFIG = {
   farm: [
     'Farm',
     '#F2E797',
-    'Assets stored in Beanstalk. Farm assets can be used in transactions on the Farm.',
+    'Assets stored in ETHrxstalk. Farm assets can be used in transactions on the Farm.',
   ],
   circulating: [
     'Circulating',
     BeanstalkPalette.lightBlue,
-    'Beanstalk assets in your wallet.',
+    'ETHrxstalk assets in your wallet.',
   ],
 } as const;
 

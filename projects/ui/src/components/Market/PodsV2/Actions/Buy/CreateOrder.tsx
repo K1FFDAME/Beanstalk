@@ -277,7 +277,7 @@ const CreateOrderV2Form: FC<
                       )} at ${displayFullBN(
                         values.pricePerPod!,
                         4
-                      )} Beans per Pod. Any Pods before ${displayBN(
+                      )} ETHrxs per Pod. Any Pods before ${displayBN(
                         values.placeInLine!
                       )} in the Pod Line are eligible to Fill this Order.`,
                     },

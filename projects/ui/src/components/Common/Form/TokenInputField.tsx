@@ -182,7 +182,7 @@ const TokenInput: FC<TokenInputProps & FieldProps> = ({
           </>
         ) : null}
         <Divider color="secondary" sx={{ my: 1 }} />
-        The Beanstalk UI first spends the balance that is most gas-efficient
+        The Pharmacy UI first spends the balance that is most gas-efficient
         based on the specified amount.
       </>,
     ];

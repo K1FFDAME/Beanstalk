@@ -15,7 +15,7 @@ const getValue = (season: LiquiditySupplyRatioQuery['seasons'][number]) =>
 const formatValue = (value: number) => `${value.toFixed(4)}%`;
 const statProps = {
   title: 'Liquidity to Supply Ratio',
-  titleTooltip: `The ratio of ETHrxs in liquidity pools on the Minting Whitelist per ETHrx, displayed as a percentage, at the beginning of every Season. The Liquidity to Supply Ratio is a useful indicator of ETHrxstalk's health. Pre-exploit values include liquidity in pools on the Deposit Whitelist.`,
+  titleTooltip: `The ratio of ETHrxs in liquidity pools on the Minting Whitelist per ETHrx, displayed as a percentage, at the beginning of every Season. The Liquidity to Supply Ratio is a useful indicator of Beanstalk's health. Pre-exploit values include liquidity in pools on the Deposit Whitelist.`,
   gap: 0.25,
 };
 const queryConfig = {

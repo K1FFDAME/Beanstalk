@@ -80,7 +80,7 @@ const FillListing: React.FC<{}> = () => {
             {displayFullBN(podListing.pricePerPod, 4, 2)}
           </Row>
         </StatHorizontal>
-        <StatHorizontal label="Beans to Fill">
+        <StatHorizontal label="ETHrxs to Fill">
           <Row gap={0.25}>
             <TokenIcon token={BEAN[1]} />{' '}
             {displayBN(

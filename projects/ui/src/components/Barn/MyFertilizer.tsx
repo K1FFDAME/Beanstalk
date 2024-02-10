@@ -80,7 +80,7 @@ const MyFertilizer: FC<{}> = () => {
             <Typography variant="body1">
               Sprouts&nbsp;
               <Tooltip
-                title="The number of Beans left to be earned from your Fertilizer. Sprouts become Rinsable on a pari passu basis."
+                title="The number of ETHrxs left to be earned from your Fertilizer. Sprouts become Rinsable on a pari passu basis."
                 placement={isMobile ? 'top' : 'bottom'}
               >
                 <HelpOutlineIcon
@@ -102,7 +102,7 @@ const MyFertilizer: FC<{}> = () => {
             <Typography variant="body1">
               Rinsable Sprouts&nbsp;
               <Tooltip
-                title="Sprouts that are redeemable for 1 Bean each. Rinsable Sprouts must be Rinsed in order to use them."
+                title="Sprouts that are redeemable for 1 ETHrx each. Rinsable Sprouts must be Rinsed in order to use them."
                 placement={isMobile ? 'top' : 'bottom'}
               >
                 <HelpOutlineIcon

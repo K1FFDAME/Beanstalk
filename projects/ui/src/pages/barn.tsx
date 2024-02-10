@@ -21,7 +21,7 @@ const Barn: FC<{}> = () => (
     <Stack gap={2}>
       <PageHeader
         title={getRouteByPath('/barn')!.title}
-        description="Earn yield and recapitalize ETHrxstalk with Fertilizer"
+        description="Earn yield and recapitalize Beanstalk with Fertilizer"
         href="https://docs.bean.money/almanac/farm/barn"
         OuterStackProps={{ direction: 'row' }}
         control={

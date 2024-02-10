@@ -353,7 +353,7 @@ export const parseActionMessage = (a: Action) => {
     case ActionType.MOW:
       return `Mow ${displayFullBN(a.stalk, 2)} Stalk.`;
     case ActionType.PLANT:
-      return `Plant ${displayFullBN(a.bean, 2)} Bean${
+      return `Plant ${displayFullBN(a.bean, 2)} ETHrx${
         a.bean.gt(1) ? 's' : ''
       }, ${displayFullBN(a.stalk, 2)} Stalk, and ${displayFullBN(a.seeds, 2)} Seeds.`;
     case ActionType.ENROOT:
@@ -369,12 +369,12 @@ export const parseActionMessage = (a: Action) => {
       return `Buy ${displayFullBN(
         a.beanAmount,
         BEAN[1].displayDecimals
-      )} Beans with ${displayFullBN(a.tokenAmount, a.token.displayDecimals)} ${
+      )} ETHrxs with ${displayFullBN(a.tokenAmount, a.token.displayDecimals)} ${
         a.token.name
       } for ~$${displayFullBN(a.beanPrice, BEAN[1].displayDecimals)} each.`;
     case ActionType.SOW_BEANS:
       return `Sow ${displayFullBN(a.amount, BEAN[1].displayDecimals)} ${
-        a.amount.eq(new BigNumber(1)) ? 'Bean' : 'Beans'
+        a.amount.eq(new BigNumber(1)) ? 'ETHrx' : 'ETHrxns'
       }.`;
     case ActionType.RECEIVE_PODS:
       return `Receive ${displayTokenAmount(
@@ -385,7 +385,7 @@ export const parseActionMessage = (a: Action) => {
       return `Harvest ${displayFullBN(a.amount, PODS.displayDecimals)} Pods.`;
     // fixme: duplicate of RECEIVE_TOKEN?
     case ActionType.RECEIVE_BEANS:
-      return `Add ${displayFullBN(a.amount, BEAN[1].displayDecimals)} Beans${
+      return `Add ${displayFullBN(a.amount, BEAN[1].displayDecimals)} ETHrxs${
         a.destination ? ` to your ${copy.MODES[a.destination]}` : ''
       }.`;
     case ActionType.TRANSFER_PODS:

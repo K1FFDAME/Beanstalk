@@ -30,7 +30,7 @@ const metricToKey = {
 };
 
 const metricTitles = {
-  Bean: 'Bean vAPY',
+  Bean: 'ETHrx vAPY',
   Bean3Curve: 'BEAN3CRV vAPY',
   BeanETHWell: 'BEANETH Well vAPY',
   UnripeBean: 'urBEAN vAPY',
@@ -55,7 +55,7 @@ const APY: FC<{
         title: metricTitles[metric],
         // FIXME: identical to SiloAssetApyChip
         titleTooltip:
-          'The Variable Bean APY uses a moving average of Beans earned by Stalkholders during recent Seasons to estimate a future rate of return, accounting for Stalk growth.',
+          'The Variable ETHrx APY uses a moving average of ETHrxns earned by Stalkholders during recent Seasons to estimate a future rate of return, accounting for Stalk growth.',
         gap: 0.5,
       }),
       [metric]

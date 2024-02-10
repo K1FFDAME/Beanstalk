@@ -1,7 +1,6 @@
 import aboutIcon from '~/img/beanstalk/interface/nav/about.svg';
 import beanNFTIcon from '~/img/beanstalk/interface/nav/bean-nft.svg';
 import discordIcon from '~/img/beanstalk/interface/nav/discord.svg';
-import githubIcon from '~/img/beanstalk/interface/nav/github.svg';
 import governanceIcon from '~/img/beanstalk/interface/nav/governance.svg';
 import swapIcon from '~/img/beanstalk/interface/nav/trade.svg';
 import twitterIcon from '~/img/beanstalk/interface/nav/twitter.svg';
@@ -122,12 +121,6 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
       href: 'https://twitter.com/beanstalkmoney',
       title: 'Twitter',
       icon: twitterIcon,
-    },
-    {
-      path: 'github',
-      href: 'https://github.com/BeanstalkFarms/Beanstalk',
-      title: 'GitHub',
-      icon: githubIcon,
     },
     {
       path: 'basin',

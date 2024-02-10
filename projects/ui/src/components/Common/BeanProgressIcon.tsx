@@ -14,7 +14,6 @@ interface ProgressIconProps {
 
 export default React.forwardRef<CircularProgressProps, ProgressIconProps>(
   (props, ref) => {
-    
     const { size, enabled, variant, progress } = props;
 
     return (
@@ -34,7 +33,7 @@ export default React.forwardRef<CircularProgressProps, ProgressIconProps>(
             thickness={PROGRESS_THICKNESS}
           />
         ) : null}
-        <img src={beanIcon} alt="Bean" css={{ height: size, width: size }} />
+        <img src={beanIcon} alt="ETHrx" css={{ height: size, width: size }} />
       </Stack>
     );
   }

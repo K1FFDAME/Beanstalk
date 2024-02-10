@@ -62,18 +62,18 @@ const RewardsSummary: FC<RewardsBarProps & { compact?: boolean }> = ({
       {/* Earned */}
       <Row gap={{ xs: GAP_XS, md: GAP_MD, lg: GAP_LG }}>
         <RewardItem
-          title="Earned Beans"
-          tooltip={
-            `The number of Beans earned since your last Plant. Upon Plant, Earned Beans are Deposited. When Beans are 
-            minted to the Silo, they are Vesting until they become Earned Beans 2 minutes later. 
-            ${vesting.amount
+          title="Earned ETHrxs"
+          tooltip={`The number of ETHrxs earned since your last Plant. Upon Plant, Earned ETHrxns are Deposited. When ETHrxns are
+            minted to the Silo, they are Vesting until they become Earned ETHrxs 2 minutes later.
+            ${
+              vesting.amount
                 ? vesting.amount.gt(0) && vesting.isVesting
-                  // TODO: Needs 'Beans in Vesting Period' function
-                  ? ``// `You have ${displayBN(vesting.amount)} Vesting Beans.`
+                  ? // TODO: Needs 'Beans in Vesting Period' function
+                    `` // `You have ${displayBN(vesting.amount)} Vesting Beans.`
                   : ``
                 : vesting.isVesting
-                  ? `It is currently the Vesting Period.`
-                  : ``
+                ? `It is currently the Vesting Period.`
+                : ``
             }
           `}
           amount={beans.earned}
@@ -88,7 +88,7 @@ const RewardsSummary: FC<RewardsBarProps & { compact?: boolean }> = ({
         />
         <RewardItem
           title="Earned Stalk"
-          tooltip="Stalk earned from Earned Beans. Earned Stalk automatically contribute to Stalk ownership even before claiming."
+          tooltip="Stalk earned from Earned ETHrxs. Earned Stalk automatically contribute to Stalk ownership even before claiming."
           amount={stalk.earned}
           icon={stalkIcon}
           compact={compact}
@@ -107,7 +107,7 @@ const RewardsSummary: FC<RewardsBarProps & { compact?: boolean }> = ({
       <Row gap={{ xs: GAP_XS, md: GAP_MD, lg: GAP_LG }}>
         <RewardItem
           title="Plantable Seeds"
-          tooltip="Seeds earned in conjunction with Earned Beans. Plantable Seeds must be Planted in order to grow Stalk."
+          tooltip="Seeds earned in conjunction with Earned ETHrxs. Plantable Seeds must be Planted in order to grow Stalk."
           amount={seeds.earned}
           icon={seedIcon}
           compact={compact}

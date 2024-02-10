@@ -82,7 +82,7 @@ const FillOrder: React.FC<{}> = () => {
               {displayFullBN(podOrder.pricePerPod)}
             </Row>
           </StatHorizontal>
-          <StatHorizontal label="Beans Remaining">
+          <StatHorizontal label="ETHrxs Remaining">
             <Row gap={0.25}>
               <TokenIcon token={BEAN[1]} />{' '}
               {displayBN(

@@ -60,7 +60,7 @@ const SiloAssetApyChip: FC<SiloAssetApyChipProps> = ({
                 title={
                   <Row gap={0.5}>
                     <TokenIcon token={Bean} />
-                    Total Beans per Season
+                    Total ETHrxs per Season
                   </Row>
                 }
                 gap={0.25}
@@ -73,7 +73,7 @@ const SiloAssetApyChip: FC<SiloAssetApyChipProps> = ({
                       )
                     : '0'
                 }
-                subtitle="30-day exponential moving average of Beans earned by all Stalkholders per Season."
+                subtitle="30-day exponential moving average of ETHrxs earned by all Stalkholders per Season."
               />
             </Box>
           )}
@@ -87,9 +87,9 @@ const SiloAssetApyChip: FC<SiloAssetApyChipProps> = ({
             {metric === 'bean' ? (
               <>
                 {' '}
-                The Variable Bean APY uses a moving average of Beans earned by
-                Stalkholders during recent Seasons to estimate a future rate of
-                return, accounting for Stalk growth.&nbsp;{' '}
+                The Variable ETHrx APY uses a moving average of ETHrxns earned
+                by Stalkholders during recent Seasons to estimate a future rate
+                of return, accounting for Stalk growth.&nbsp;{' '}
               </>
             ) : (
               <>

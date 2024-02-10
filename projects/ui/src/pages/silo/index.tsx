@@ -513,7 +513,7 @@ const RewardsBar: FC<{
                       <Connector top={29} />
                       <Connector top={69.5} />
                       <FormControlLabelStat
-                        label="Earned Beans"
+                        label="Earned ETHrxs"
                         stat={displayFullBN(
                           farmerSilo.beans.earned,
                           2,

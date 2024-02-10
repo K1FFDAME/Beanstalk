@@ -90,11 +90,11 @@ export const getGovSpaceLabel = (space: GovSpace) => {
     case GovSpace.BeanstalkDAO:
       return 'DAO';
     case GovSpace.BeanstalkFarms:
-      return 'Beanstalk Farms';
+      return 'ETHrxstalk Farms';
     case GovSpace.BeanSprout:
-      return 'Bean Sprout';
+      return 'ETHrx Sprout';
     default: {
-      return 'BeanNFT DAO';
+      return 'ETHrxNFT DAO';
     }
   }
 };

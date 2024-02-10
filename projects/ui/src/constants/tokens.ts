@@ -142,7 +142,7 @@ export const BEAN = {
     BEAN_ADDRESSES,
     6,
     {
-      name: 'Bean',
+      name: 'ETHrx',
       symbol: 'BEAN',
       logo: beanCircleLogoUrl,
       color: BeanstalkPalette.logoGreen,
@@ -335,7 +335,7 @@ export const UNRIPE_BEAN = {
     UNRIPE_BEAN_ADDRESSES,
     6,
     {
-      name: 'Unripe Bean',
+      name: 'Unripe ETHrx',
       symbol: 'urBEAN',
       logo: unripeBeanLogoUrl,
       displayDecimals: 2,

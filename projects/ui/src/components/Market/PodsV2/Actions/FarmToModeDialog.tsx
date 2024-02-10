@@ -14,7 +14,7 @@ import {
 const OPTIONS = [
   {
     title: 'Circulating Balance',
-    description: 'Return Beans in this Order to your wallet.',
+    description: 'Return ETHrxs in this Order to your wallet.',
     pill: (
       <>
         <AddressIcon size={IconSize.xs} />
@@ -33,7 +33,7 @@ const OPTIONS = [
   {
     title: 'Farm Balance',
     description:
-      'Return Beans in this Order to your internal Beanstalk balance.',
+      'Return ETHrxs in this Order to your internal Pharmacy balance.',
     pill: <Typography variant="body1">🚜 Farm Balance</Typography>,
     icon: '🚜',
     value: FarmToMode.INTERNAL,

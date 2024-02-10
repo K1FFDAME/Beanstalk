@@ -19,7 +19,7 @@ const BalancesPage: FC<{}> = () => (
       </Stack> */}
       <PageHeader
         title={getRouteByPath('/balances')!.title}
-        description="Earn yield and recapitalize ETHrxstalk with Fertilizer"
+        description="Earn yield and recapitalize Beanstalk with Fertilizer"
         href="https://docs.bean.money/almanac/farm/barn"
         OuterStackProps={{ direction: 'row' }}
         control={<GuideButton title="" guides={[]} />}

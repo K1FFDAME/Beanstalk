@@ -267,7 +267,7 @@ const BeanstalkBalances: FC<{
                           2
                         )}
                         labelTooltip={STATE_CONFIG[state][2](
-                          hoverToken === Bean ? 'Beans' : hoverToken.symbol
+                          hoverToken === Bean ? 'ETHrxs' : hoverToken.symbol
                         )}
                         amountTooltip={amountTooltip(
                           hoverToken,

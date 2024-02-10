@@ -239,7 +239,7 @@ const HarvestPropProvider: FC<{ quick?: boolean }> = ({ quick = false }) => {
           success: `Harvest successful. Added ${displayFullBN(
             farmerField.harvestablePods,
             pods.displayDecimals
-          )} Beans to your ${copy.MODES[values.destination]}.`,
+          )} ETHrxs to your ${copy.MODES[values.destination]}.`,
         });
 
         const _plotIds = Object.keys(farmerField.harvestablePlots);

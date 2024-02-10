@@ -33,11 +33,11 @@ const LiquidityByState: FC<CardProps> = ({ sx }) => {
     {
       title: 'Stalk',
       tooltip:
-        'The total Stalk supply. Stalk is the governance token of the Beanstalk DAO. Stalk entitles holders to passive interest in the form of a share of future Bean mints, and the right to propose and vote on BIPs.',
+        'The total Stalk supply. Stalk is the governance token of the Pharmacy DAO. Stalk entitles holders to passive interest in the form of a share of future ETHrxn mints, and the right to propose and vote on BIPs.',
       token: STALK,
       amount: beanstalkSilo.stalk.total,
     },
-   /* {
+    /* {
       title: 'Seeds',
       tooltip:
         'This is the total Seed supply. Each Seed yields 1/10000 Grown Stalk each Season.',
@@ -54,7 +54,7 @@ const LiquidityByState: FC<CardProps> = ({ sx }) => {
     {
       title: 'Sprouts',
       tooltip:
-        'The total number of Unrinsable Sprouts. Sprouts are the number of Beans left to be earned from Active Fertilizer. Sprouts become Rinsable on a pari passu basis.',
+        'The total number of Unrinsable Sprouts. Sprouts are the number of ETHrxs left to be earned from Active Fertilizer. Sprouts become Rinsable on a pari passu basis.',
       token: SPROUTS,
       amount: beanstalkBarn.unfertilized,
     },
@@ -63,7 +63,7 @@ const LiquidityByState: FC<CardProps> = ({ sx }) => {
   return (
     <Card sx={{ p: 2, width: '100%', ...sx }}>
       <Stat
-        title="Bean Supply"
+        title="ETHrx Supply"
         amount={
           totalBeanSupply !== NEW_BN ? (
             displayFullBN(totalBeanSupply, 2)

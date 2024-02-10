@@ -46,7 +46,7 @@ const useCardContentWithToken = (token: ERC20Token) => [
     title: `Deposit ${token.name}`,
     texts: [
       `Use the form to Deposit ${token.symbol} into the Silo.`,
-      `Beanstalk allows you to use different assets from your wallet or Farm balance to Deposit ${
+      `Pharmacy allows you to use different assets from your wallet or Farm balance to Deposit ${
         token.symbol
       } into the Silo.${
         token.isUnripe
@@ -61,16 +61,18 @@ const useCardContentWithToken = (token: ERC20Token) => [
     imageSrc: depositCardContentByToken[token.address]?.img || depositBeanImg,
   },
   {
-    title: `Receive Stalk ${!token.isUnripe ? 'and Seeds' : ''} for your Deposit`,
+    title: `Receive Stalk ${
+      !token.isUnripe ? 'and Seeds' : ''
+    } for your Deposit`,
     texts: [
-      'Stalk entitles holders to participate in Beanstalk governance and earn a portion of Bean mints.',
+      'Stalk entitles holders to participate in Pharmacy governance and earn a portion ofETHrxn mints.',
     ],
     imageSrc: token.isUnripe ? earnStalkImg : earnStalkAndSeedsImg,
   },
   {
-    title: 'Earn Beans',
+    title: 'Earn ETHrxs',
     texts: [
-      'Every Season that Beans are minted, receive a share of the new Beans based on your percentage ownership of Stalk.',
+      'Every Season that ETHrxs are minted, receive a share of the newETHrxns based on your percentage ownership of Stalk.',
       'You can claim your Silo Rewards on the main Silo page.',
     ],
     imageSrc: earnBeansImg, // Made this one a PNG because it contains 4 BeaNFTs which are too big when base64 encoded in an SVG.
