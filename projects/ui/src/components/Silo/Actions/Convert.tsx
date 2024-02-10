@@ -326,7 +326,10 @@ const ConvertForm: FC<
           params={quoteHandlerParams}
         />
         {!canConvert && tokenOut && maxAmountIn ? null : (
-          <AddPlantTxnToggle plantAndDoX={plantAndDoX.plantAction} actionText='Convert' />
+          <AddPlantTxnToggle
+            plantAndDoX={plantAndDoX.plantAction}
+            actionText="Convert"
+          />
         )}
 
         {/* User Input: destination token */}
@@ -646,7 +649,7 @@ const ConvertPropProvider: FC<{
 
         const receipt = await txn.wait();
 
-        await refetch(actionsPerformed, { farmerSilo: true }, [
+        await refetch(actionsPerformed, { farmerBeaker: true }, [
           refetchPools, // update prices to account for pool conversion
           refetchFarmerBalances,
         ]);

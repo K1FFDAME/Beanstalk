@@ -506,7 +506,7 @@ const TransferPropProvider: FC<{
         txToast.confirming(txn);
 
         const receipt = await txn.wait();
-        await refetch(actionsPerformed, { farmerSilo: true }, [refetchSilo]);
+        await refetch(actionsPerformed, { farmerBeaker: true }, [refetchSilo]);
 
         txToast.success(receipt);
 

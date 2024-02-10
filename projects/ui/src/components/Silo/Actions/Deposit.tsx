@@ -555,8 +555,8 @@ const DepositPropProvider: FC<{
         await refetch(
           actionsPerformed,
           {
-            beanstalkSilo: true,
-            farmerSilo: true,
+            beanstalkBeaker: true,
+            farmerBeaker: true,
             farmerBalances: true,
           },
           [refetchPools]

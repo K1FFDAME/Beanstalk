@@ -502,7 +502,7 @@ const BuyPropProvider: FC<{}> = () => {
           {
             farmerBarn: true,
             farmerBalances: true,
-            farmerSilo: true,
+            farmerBeaker: true,
           },
           [
             () =>
