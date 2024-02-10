@@ -82,7 +82,7 @@ const FieldInfo: React.FC<{}> = () => {
               </Typography>
               <Typography>
                 Capsules become Harvestable (redeemable) into ETHrxs on a FIFO
-                basis. Capsules are tradeable on the Market.
+                basis. Capsules are tradeable on the Counter.
               </Typography>
             </>
           ) : null}

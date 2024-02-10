@@ -142,7 +142,7 @@ const ListForm: FC<
                 color="warning"
                 icon={<WarningAmberIcon />}
               >
-                This Plot is already listed on the Market. Creating a new
+                This Plot is already listed on the Counter. Creating a new
                 Listing will override the previous one.
               </Alert>
             ) : null}

@@ -13,7 +13,7 @@ const getValue = (season: Season) => parseFloat(season.marketCap);
 const formatValue = (value: number) =>
   `$${value.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
 const statProps = {
-  title: 'Market Cap',
+  title: 'Counter Cap',
   titleTooltip:
     'The USD value of the ETHrx supply at the beginning of every Season.',
   gap: 0.25,

@@ -36,7 +36,7 @@ const BeanAnalytics: FC<{}> = () => {
         <Tab label="ETHrx Price" />
         <Tab label="Volume" />
         <Tab label="Liquidity" />
-        <Tab label="Market Cap" />
+        <Tab label="Counter Cap" />
         <Tab label="Supply" />
         <Tab label="Crosses" />
         <Tab label="deltaB" />

@@ -53,7 +53,7 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
     },
     {
       path: '/market/buy',
-      title: 'Market',
+      title: 'Counter',
     },
   ],
   // More Menu
@@ -139,7 +139,7 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
   market: [
     {
       path: '/market',
-      title: 'Capsule Market',
+      title: 'Capsule Counter',
     },
     {
       path: '/market/account',
@@ -147,7 +147,7 @@ const ROUTES: { [key in RouteKeys]: RouteData[] } = {
     },
     {
       path: '/market/activity',
-      title: 'Marketplace Activity',
+      title: 'Counterplace Activity',
     },
   ],
   // Analytics Menu
