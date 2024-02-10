@@ -12,7 +12,7 @@ export const useFetchBeanstalkField = () => {
   // Handlers
   const fetch = useCallback(async () => {
     if (beanstalk) {
-      console.debug('[beanstalk/field/useETHrxstalkField] FETCH');
+      console.debug('[beanstalk/field/useETHrxstalkLab] FETCH');
 
       const [
         harvestableIndex,
@@ -34,7 +34,7 @@ export const useFetchBeanstalkField = () => {
         beanstalk.maxTemperature().then(tokenResult(BEAN)), // FIXME
       ] as const);
 
-      console.debug('[beanstalk/field/useETHrxstalkField] RESULT', {
+      console.debug('[beanstalk/field/useETHrxstalkLab] RESULT', {
         harvestableIndex: harvestableIndex.toString(),
         podIndex: podIndex.toString(),
         soil: soil.toString(),
@@ -60,7 +60,7 @@ export const useFetchBeanstalkField = () => {
   }, [dispatch, beanstalk]);
 
   const clear = useCallback(() => {
-    console.debug('[beanstalk/field/useETHrxstalkField] CLEAR');
+    console.debug('[beanstalk/field/useETHrxstalkLab] CLEAR');
     dispatch(resetBeanstalkField());
   }, [dispatch]);
 

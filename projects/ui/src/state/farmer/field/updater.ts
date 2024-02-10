@@ -87,7 +87,7 @@ export const useFetchFarmerField = () => {
   }, [initialized, fetchFieldEvents, sdk, account, dispatch, harvestableIndex]);
 
   const clear = useCallback(() => {
-    console.debug('[farmer/silo/useFarmerField] CLEAR');
+    console.debug('[farmer/silo/useFarmerLab] CLEAR');
     dispatch(resetFarmerField());
   }, [dispatch]);
 
@@ -110,14 +110,9 @@ const FarmerFieldUpdater = () => {
       fetch()
         .catch((err) => {
           if ((err as Error).message.includes('limit the query')) {
-            console.log(
-              'Failed to fetch Field events: RPC query limit exceeded'
-            );
+            console.log('Failed to fetch Lab events: RPC query limit exceeded');
           } else {
-            console.log(
-              'Failed to fetch Field events: ',
-              (err as Error).message
-            );
+            console.log('Failed to fetch Lab events: ', (err as Error).message);
           }
         })
         .finally(() => {

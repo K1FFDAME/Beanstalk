@@ -93,7 +93,7 @@ const FieldPage: FC<{}> = () => {
           OuterStackProps={{ direction: 'row' }}
           control={
             <GuideButton
-              title="The Farmers' Almanac: Field Guides"
+              title="The Farmers' Almanac: Lab Guides"
               guides={[
                 HOW_TO_SOW_BEANS,
                 HOW_TO_TRANSFER_PODS,

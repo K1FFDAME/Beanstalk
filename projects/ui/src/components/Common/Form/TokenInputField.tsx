@@ -205,7 +205,7 @@ const TokenInput: FC<TokenInputProps & FieldProps> = ({
         _max === 'use-balance'
           ? balance?.plus(additionalBalance || ZERO_BN)
           : _max; // fallback to balance
-      console.debug(`[TokenInputField@${field.name}] clamp: `, {
+      console.debug(`[TokenInputLab@${field.name}] clamp: `, {
         amount: amount?.toString(),
         max: max?.toString(),
         balance: balance?.toString(),
@@ -257,10 +257,10 @@ const TokenInput: FC<TokenInputProps & FieldProps> = ({
 
   //
   const handleMax = useCallback(() => {
-    console.debug('[TokenInputField] handleMax');
+    console.debug('[TokenInputLab] handleMax');
     if (balance) {
       const clampedValue = clamp(balance.plus(additionalBalance || ZERO_BN));
-      console.debug('[TokenInputField] handleMax: balance exists', {
+      console.debug('[TokenInputLab] handleMax: balance exists', {
         balance,
         clampedValue,
       });
@@ -296,14 +296,14 @@ const TokenInput: FC<TokenInputProps & FieldProps> = ({
   useEffect(() => {
     if (!field.value) {
       if (displayAmount !== '') {
-        console.debug('[TokenInputField] clearing', {
+        console.debug('[TokenInputLab] clearing', {
           name: field.name,
         });
         setDisplayAmount('');
       }
     } else if (field.value.toString() !== displayAmount) {
       console.debug(
-        `[TokenInputField/${field.name}] field.value or displayAmount changed:`,
+        `[TokenInputLab/${field.name}] field.value or displayAmount changed:`,
         {
           name: field.name,
           value: field.value,
@@ -333,7 +333,7 @@ const TokenInput: FC<TokenInputProps & FieldProps> = ({
     const clampedBN = new BigNumber(_clampedValue);
     if (field.value.gt(clampedBN)) {
       console.debug(
-        `[TokenInputField]/${field.name} field.value > max. Updating display amount`,
+        `[TokenInputLab]/${field.name} field.value > max. Updating display amount`,
         {
           fromAmount: field.value.toString(),
           toAmount: _clampedValue.toString(),

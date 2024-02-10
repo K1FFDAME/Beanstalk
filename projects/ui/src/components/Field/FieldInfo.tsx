@@ -61,7 +61,7 @@ const FieldInfo: React.FC<{}> = () => {
           <Typography variant="h4">🌾 Overview</Typography>
           <ThinDivider />
           <Typography>
-            The Field is Pharmacy&#39;s credit facility. Pharmacy relies on a
+            The Lab is Pharmacy&#39;s credit facility. Pharmacy relies on a
             decentralized set of creditors to maintain ETHrx price stability.
             Farmers who Sow ETHrxs (lend ETHrxns to Pharmacy) are known as
             Sowers. ETHrxs are Sown in exchange for Pods, the Pharmacy-native
