@@ -1,31 +1,7 @@
-[discord-badge]: https://img.shields.io/discord/880413392916054098?label=Beanstalk
-[discord-url]: https://discord.gg/beanstalk
 
-[proj-protocol]: /protocol
-[proj-ui]: /projects/ui
-[proj-sdk]: /projects/sdk
-[proj-subgraph-beanstalk]: /projects/subgraph-beanstalk
-[proj-subgraph-bean]: /projects/subgraph-bean
-[proj-cli]: /projects/cli
-[proj-basin-ui]: /projects/dex-ui
-[proj-basin-sdk]: /projects/sdk-wells
-[proj-subgraph-basin]: /projects/subgraph-wells
-
-[basin-protocol]: https://github.com/BeanstalkFarms/Basin
-[pipeline-protocol]: https://github.com/BeanstalkFarms/Pipeline
+# Pharmacy
 
 
-[es-beanstalk]: https://etherscan.io/address/0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5
-[es-bean]: https://etherscan.io/address/0xBEA0000029AD1c77D3d5D23Ba2D8893dB9d1Efab
-[es-basin]: https://docs.basin.exchange/resources/contracts
-
-[npm-beanstalk]: https://www.npmjs.com/package/@beanstalk/sdk
-
-<img src="https://github.com/BeanstalkFarms/Beanstalk-Brand-Assets/blob/main/BEAN/bean-128x128.png" alt="Beanstalk logo" align="right" width="120" />
-
-# Beanstalk
-
-[![Discord][discord-badge]][discord-url]
 
 Code Version: `2.7.3` <br>
 Whitepaper Version: `2.7.0`
@@ -65,29 +41,7 @@ If you are a developer and would like to contribute, please see our [DEVELOPER.m
 
 ## Documentation
 
-Conceptual documentation on Beanstalk can be found in the [Farmers' Almanac](https://docs.bean.money/almanac). <br>
-Technical documentation on Beanstalk can be found in the [Agronomics Handbook](https://docs.bean.money/developers).
+Conceptual documentation on Beanstalk can be found in the Farmers' Almanac. <br>
+Technical documentation on Beanstalk can be found in the Agronomics Handbook).
 
-The latest version of the Beanstalk Whitepaper is available [here](https://bean.money/beanstalk.pdf) (version history can be found [here](https://github.com/BeanstalkFarms/Beanstalk-Whitepaper/tree/main/version-history)).
 
-## Governance
-
-Read more about Beanstalk governance [here](https://docs.bean.money/almanac/governance/beanstalk). All past governance proposals can be found [here](https://github.com/BeanstalkFarms/Beanstalk-Governance-Proposals).
-
-## Audits
-
-Read more about Beanstalk audits [here](https://docs.bean.money/almanac/protocol/audits).
-
-## Bug Bounty Program
-
-The Beanstalk DAO partnered with Immunefi to launch a bug bounty program with rewards up to **1.1M Beans**.
-
-You can find the bug bounty program and submit bug reports [here](https://immunefi.com/bounty/beanstalk).
-
-## Contracts
-
-A comprehensive list of contract addresses related to Beanstalk is available [here](https://docs.bean.money/almanac/protocol/contracts).
-
-## License
-
-[MIT](https://github.com/BeanstalkFarms/Beanstalk/blob/master/LICENSE.txt)
